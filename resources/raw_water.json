@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "id": "raw_water",
+  "name": {
+    "zh": "天然水样",
+    "en": "Natural water sample"
+  },
+  "category": "mixture",
+  "description": "组成随地点变化，未列出的溶解与悬浮物含量未知。",
+  "composition": {
+    "components": [
+      {
+        "name": "水及溶解或悬浮物",
+        "fraction_min": 0,
+        "fraction_max": 1
+      }
+    ],
+    "source_ids": [
+      "usgs"
+    ]
+  },
+  "appearance": {
+    "phase": "liquid",
+    "description": "无色透明，条件约 20°C、常压"
+  },
+  "properties": [],
+  "formation": "液态水可由冷凝等过程形成",
+  "storage": "使用合适的密闭容器，避免污染",
+  "applications": [
+    "溶剂"
+  ],
+  "acquisition": [
+    {
+      "kind": "direct_collection",
+      "operation": "collect",
+      "description": "从液态水体收集",
+      "conditions": [
+        "存在液态水"
+      ],
+      "inputs": [],
+      "equipment": [
+        "容器"
+      ],
+      "source_ids": [
+        "usgs"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "usgs",
+      "url": "https://www.usgs.gov/special-topics/water-science-school/science/water-universal-solvent",
+      "title": "USGS Water the Universal Solvent",
+      "locator": "Dissolved substances",
+      "accessed": "2026-10-27"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

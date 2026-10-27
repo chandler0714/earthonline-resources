@@ -1,0 +1,409 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]{0,79}$"
+    },
+    "name": {
+      "type": "object",
+      "properties": {
+        "zh": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        }
+      },
+      "required": [
+        "zh",
+        "en"
+      ],
+      "additionalProperties": false
+    },
+    "category": {
+      "enum": [
+        "substance",
+        "mineral",
+        "mixture",
+        "biological"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "composition": {
+      "type": "object",
+      "properties": {
+        "formula": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9()+.·−+\\-]+$",
+          "maxLength": 200
+        },
+        "components": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4000
+              },
+              "fraction_min": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "fraction_max": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            },
+            "required": [
+              "name",
+              "fraction_min",
+              "fraction_max"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "source_ids"
+      ],
+      "additionalProperties": false,
+      "oneOf": [
+        {
+          "required": [
+            "formula"
+          ]
+        },
+        {
+          "required": [
+            "components"
+          ]
+        }
+      ]
+    },
+    "appearance": {
+      "type": "object",
+      "properties": {
+        "phase": {
+          "enum": [
+            "solid",
+            "liquid",
+            "gas",
+            "mixed"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        }
+      },
+      "required": [
+        "phase",
+        "description"
+      ],
+      "additionalProperties": false
+    },
+    "properties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "enum": [
+              "density",
+              "melting_point",
+              "boiling_point",
+              "hardness"
+            ]
+          },
+          "value": {
+            "type": "number"
+          },
+          "unit": {
+            "enum": [
+              "kg/m3",
+              "degC",
+              "Mohs"
+            ]
+          },
+          "conditions": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "name",
+          "value",
+          "unit",
+          "conditions",
+          "source_ids"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "formation": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "storage": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "applications": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 4000
+      }
+    },
+    "acquisition": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "enum": [
+              "direct_collection",
+              "gathering",
+              "digging",
+              "processing"
+            ]
+          },
+          "operation": {
+            "enum": [
+              "collect",
+              "gather",
+              "dig",
+              "mine",
+              "refine",
+              "distill",
+              "filter",
+              "extract",
+              "other"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4000
+            },
+            "minItems": 1
+          },
+          "inputs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "resource_id": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9_-]*$"
+                },
+                "description": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 4000
+                }
+              },
+              "required": [
+                "resource_id",
+                "description"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "equipment": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4000
+            }
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "kind",
+          "operation",
+          "description",
+          "conditions",
+          "inputs",
+          "equipment",
+          "source_ids"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "kind": {
+                  "const": "processing"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "inputs": {
+                  "minItems": 1
+                },
+                "equipment": {
+                  "minItems": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "accessed": {
+            "type": "string",
+            "format": "date"
+          }
+        },
+        "required": [
+          "id",
+          "url",
+          "title",
+          "locator",
+          "accessed"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "review": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "unreviewed",
+            "needs_evidence",
+            "evidence_checked"
+          ]
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "license": {
+          "const": "CC0-1.0"
+        },
+        "contributor": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        }
+      },
+      "required": [
+        "license",
+        "contributor"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "name",
+    "category",
+    "description",
+    "composition",
+    "appearance",
+    "properties",
+    "formation",
+    "storage",
+    "applications",
+    "acquisition",
+    "sources",
+    "review",
+    "provenance"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://earthonline.example/schema/resource-v1",
+  "title": "EarthOnline resource contribution"
+}

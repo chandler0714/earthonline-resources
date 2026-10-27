@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "id": "water",
+  "name": {
+    "zh": "水",
+    "en": "Water"
+  },
+  "category": "substance",
+  "description": "常见液体",
+  "composition": {
+    "formula": "H2O",
+    "source_ids": [
+      "nist"
+    ]
+  },
+  "appearance": {
+    "phase": "liquid",
+    "description": "无色透明，条件约 20°C、常压"
+  },
+  "properties": [],
+  "formation": "液态水可由冷凝等过程形成",
+  "storage": "使用合适的密闭容器，避免污染",
+  "applications": [
+    "溶剂"
+  ],
+  "acquisition": [
+    {
+      "kind": "direct_collection",
+      "operation": "collect",
+      "description": "从液态水体收集",
+      "conditions": [
+        "存在液态水"
+      ],
+      "inputs": [],
+      "equipment": [
+        "容器"
+      ],
+      "source_ids": [
+        "nist"
+      ]
+    },
+    {
+      "kind": "processing",
+      "operation": "distill",
+      "description": "蒸馏含水混合物并收集冷凝液，纯度取决于设备与杂质。",
+      "conditions": [
+        "需要受控加热及冷凝"
+      ],
+      "inputs": [
+        {
+          "resource_id": "raw_water",
+          "description": "含水混合物"
+        }
+      ],
+      "equipment": [
+        "蒸馏装置",
+        "冷凝装置",
+        "接收容器"
+      ],
+      "source_ids": [
+        "distillation"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nist",
+      "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185",
+      "title": "NIST Water",
+      "locator": "Formula",
+      "accessed": "2026-10-27"
+    },
+    {
+      "id": "distillation",
+      "url": "https://www.usgs.gov/special-topics/water-science-school/science/desalination",
+      "title": "USGS Desalination",
+      "locator": "Distillation",
+      "accessed": "2026-10-27"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

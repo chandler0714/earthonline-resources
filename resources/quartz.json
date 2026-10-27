@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "id": "quartz",
+  "name": {
+    "zh": "石英",
+    "en": "Quartz"
+  },
+  "category": "mineral",
+  "description": "二氧化硅矿物，形态随产状变化。",
+  "composition": {
+    "formula": "SiO2",
+    "source_ids": [
+      "handbook"
+    ]
+  },
+  "appearance": {
+    "phase": "solid",
+    "description": "可呈晶体或块状，颜色随杂质变化。"
+  },
+  "properties": [],
+  "formation": "存在多种地质形成环境，具体矿床条件需分别核实。",
+  "storage": "按样品形态存放，避免产生或吸入粉尘。",
+  "applications": [
+    "矿物研究样品"
+  ],
+  "acquisition": [
+    {
+      "kind": "gathering",
+      "operation": "gather",
+      "description": "在有权限采集的含石英露头收集松散样品。",
+      "conditions": [
+        "存在露头或松散样品"
+      ],
+      "inputs": [],
+      "equipment": [
+        "采集容器"
+      ],
+      "source_ids": [
+        "handbook"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "handbook",
+      "url": "https://www.handbookofmineralogy.org/pdfs/quartz.pdf",
+      "title": "Handbook of Mineralogy Quartz",
+      "locator": "Formula and occurrence",
+      "accessed": "2026-10-27"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}
