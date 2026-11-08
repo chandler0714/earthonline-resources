@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "id": "air",
+  "name": {
+    "zh": "近地表空气",
+    "en": "Near-surface air"
+  },
+  "category": "mixture",
+  "description": "地球近地表空气的参考样本。所列氮和氧质量分数取自海平面、约 300 K 的参考表；氩、水汽及其他成分未在此列全，组成会随地点、高度和天气变化，不能作为每颗星球的固定大气配方。",
+  "composition": {
+    "components": [
+      {
+        "name": "分子氮 N2",
+        "fraction_min": 0.765,
+        "fraction_max": 0.765
+      },
+      {
+        "name": "分子氧 O2",
+        "fraction_min": 0.2197,
+        "fraction_max": 0.2197
+      }
+    ],
+    "source_ids": [
+      "jpl_atmosphere"
+    ]
+  },
+  "appearance": {
+    "phase": "gas",
+    "description": "通常不可直接从外观分辨其气体组分；样本性质取决于当地温度、压力和悬浮物。"
+  },
+  "properties": [],
+  "formation": "行星大气的组成由具体星球历史决定；本条只记录地球近地表空气样本，不推断其他星球的大气形成链。",
+  "storage": "采样后使用适当的密闭容器保存，并记录采样地点与条件。",
+  "applications": [
+    "大气组成观测样本"
+  ],
+  "acquisition": [
+    {
+      "kind": "direct_collection",
+      "operation": "collect",
+      "description": "从可接触的大气中采集空气样本。",
+      "conditions": [
+        "所在位置有可采样的大气",
+        "记录采样位置及环境条件"
+      ],
+      "inputs": [],
+      "equipment": [
+        "气体采样容器"
+      ],
+      "source_ids": [
+        "jpl_atmosphere"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "jpl_atmosphere",
+      "url": "https://descanso.jpl.nasa.gov/monograph/series7/Descanso%207_chap03.pdf",
+      "title": "JPL Deep Space Optical Communications, Chapter 3: The Atmospheric Channel",
+      "locator": "Section 3.2.2, Tables 3-2 and 3-3, pp. 142-143",
+      "accessed": "2026-11-08"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}
