@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "id": "gypsum",
+  "name": {
+    "zh": "石膏矿物",
+    "en": "Gypsum mineral"
+  },
+  "category": "mineral",
+  "description": "石膏为含结晶水的硫酸钙矿物；天然矿石可含杂质，化学式表示矿物本身而非每块矿石的纯度。",
+  "composition": {
+    "formula": "CaSO4·2H2O",
+    "source_ids": [
+      "usgs_bedded_gypsum"
+    ]
+  },
+  "appearance": {
+    "phase": "solid",
+    "description": "可见白色或近白色结晶体；天然样本的外观受杂质和产状影响。"
+  },
+  "properties": [],
+  "formation": "可在盐水蒸发形成的沉积蒸发岩层中出现，具体矿床需要地质条件支持。",
+  "storage": "矿石样本按固体矿物保存，避免与其他样本混杂。",
+  "applications": [
+    "建筑石膏板原料",
+    "水泥缓凝剂原料"
+  ],
+  "acquisition": [
+    {
+      "kind": "digging",
+      "operation": "mine",
+      "description": "在已发现、可接近的石膏矿层或露头开采矿石。",
+      "conditions": [
+        "当地存在石膏矿层或露头",
+        "具备进入矿层的条件"
+      ],
+      "inputs": [],
+      "equipment": [
+        "适合当地矿层的挖掘工具"
+      ],
+      "source_ids": [
+        "usgs_bedded_gypsum"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "usgs_bedded_gypsum",
+      "url": "https://pubs.usgs.gov/of/1993/0329/report.pdf",
+      "title": "USGS Open-File Report 93-329: Bedded Gypsum",
+      "locator": "Background and Geology sections",
+      "accessed": "2026-11-08"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

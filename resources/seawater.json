@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "id": "seawater",
+  "name": {
+    "zh": "海水",
+    "en": "Seawater"
+  },
+  "category": "mixture",
+  "description": "海水是含溶解盐的水体。以下质量分数仅表示 NOAA 所述约 35‰ 平均盐度的参考样本；实际盐度受降水、蒸发及地点影响，悬浮物和微量组分尚未列出。",
+  "composition": {
+    "components": [
+      {
+        "name": "水及未单列的非盐组分",
+        "fraction_min": 0.965,
+        "fraction_max": 0.965
+      },
+      {
+        "name": "溶解盐总量",
+        "fraction_min": 0.035,
+        "fraction_max": 0.035
+      }
+    ],
+    "source_ids": [
+      "noaa_salinity"
+    ]
+  },
+  "appearance": {
+    "phase": "liquid",
+    "description": "液态水体；透明度、颜色及悬浮物随海域条件改变。"
+  },
+  "properties": [],
+  "formation": "陆地岩石风化产生的离子经河流进入海洋，海底热液与海底火山等也可贡献溶解物。",
+  "storage": "取样后用清洁容器密闭保存，并记录海域与采样条件。",
+  "applications": [
+    "海洋盐度与成分观测样本"
+  ],
+  "acquisition": [
+    {
+      "kind": "direct_collection",
+      "operation": "collect",
+      "description": "从可接近的海洋水体中采集海水样本。",
+      "conditions": [
+        "存在可接近的液态海水",
+        "记录采样地点"
+      ],
+      "inputs": [],
+      "equipment": [
+        "取样容器"
+      ],
+      "source_ids": [
+        "noaa_salinity"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "noaa_salinity",
+      "url": "https://oceanservice.noaa.gov/facts/whysalty.html",
+      "title": "NOAA National Ocean Service: Why is the ocean salty?",
+      "locator": "Paragraphs on salt sources and average salinity",
+      "accessed": "2026-11-08"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

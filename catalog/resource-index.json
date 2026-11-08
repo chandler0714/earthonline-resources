@@ -47,6 +47,22 @@
   ],
   "resources": [
     {
+      "id": "air",
+      "path": "resources/air.json",
+      "domains": [
+        "atmosphere"
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "gypsum",
+      "path": "resources/gypsum.json",
+      "domains": [
+        "geosphere"
+      ],
+      "ecosystems": []
+    },
+    {
       "id": "quartz",
       "path": "resources/quartz.json",
       "domains": [
@@ -64,6 +80,19 @@
         "river_stream",
         "lake_pond",
         "wetland",
+        "coastal_intertidal",
+        "coral_reef",
+        "open_ocean",
+        "deep_sea"
+      ]
+    },
+    {
+      "id": "seawater",
+      "path": "resources/seawater.json",
+      "domains": [
+        "hydrosphere"
+      ],
+      "ecosystems": [
         "coastal_intertidal",
         "coral_reef",
         "open_ocean",
