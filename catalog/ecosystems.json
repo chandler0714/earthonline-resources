@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "description": "Browsing taxonomy for evidence-backed natural resources; ecosystem tags describe possible habitat or occurrence, not guaranteed planet placement.",
+  "sources": [
+    {
+      "id": "nasa_biomes",
+      "url": "https://science.nasa.gov/kids/earth/mission-biomes/",
+      "title": "NASA Mission: Biomes"
+    },
+    {
+      "id": "nasa_landcover",
+      "url": "https://www.earthdata.nasa.gov/s3fs-public/2025-04/MCD12_User_Guide_V6.pdf",
+      "title": "NASA MODIS Land Cover User Guide"
+    },
+    {
+      "id": "usgs_water",
+      "url": "https://www.usgs.gov/water-science-school/water-cycle",
+      "title": "USGS Water Cycle"
+    },
+    {
+      "id": "noaa_marine",
+      "url": "https://sanctuaries.noaa.gov/visit/ecosystems/",
+      "title": "NOAA National Marine Sanctuaries Ecosystems"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "tropical_rainforest",
+      "realm": "terrestrial",
+      "name": {
+        "en": "Tropical rainforest",
+        "zh": "热带雨林"
+      },
+      "source_ids": [
+        "nasa_biomes"
+      ]
+    },
+    {
+      "id": "temperate_forest",
+      "realm": "terrestrial",
+      "name": {
+        "en": "Temperate forest",
+        "zh": "温带森林"
+      },
+      "source_ids": [
+        "nasa_biomes"
+      ]
+    },
+    {
+      "id": "boreal_forest",
+      "realm": "terrestrial",
+      "name": {
+        "en": "Boreal forest",
+        "zh": "寒带针叶林"
+      },
+      "source_ids": [
+        "nasa_landcover"
+      ]
+    },
+    {
+      "id": "grassland",
+      "realm": "terrestrial",
+      "name": {
+        "en": "Grassland",
+        "zh": "草原"
+      },
+      "source_ids": [
+        "nasa_biomes"
+      ]
+    },
+    {
+      "id": "savanna",
+      "realm": "terrestrial",
+      "name": {
+        "en": "Savanna",
+        "zh": "稀树草原"
+      },
+      "source_ids": [
+        "nasa_landcover"
+      ]
+    },
+    {
+      "id": "shrubland",
+      "realm": "terrestrial",
+      "name": {
+        "en": "Shrubland",
+        "zh": "灌丛"
+      },
+      "source_ids": [
+        "nasa_biomes"
+      ]
+    },
+    {
+      "id": "desert",
+      "realm": "terrestrial",
+      "name": {
+        "en": "Desert",
+        "zh": "沙漠"
+      },
+      "source_ids": [
+        "nasa_biomes"
+      ]
+    },
+    {
+      "id": "tundra",
+      "realm": "terrestrial",
+      "name": {
+        "en": "Tundra",
+        "zh": "苔原"
+      },
+      "source_ids": [
+        "nasa_biomes"
+      ]
+    },
+    {
+      "id": "snow_ice",
+      "realm": "terrestrial",
+      "name": {
+        "en": "Persistent snow and ice",
+        "zh": "常年冰雪区"
+      },
+      "source_ids": [
+        "nasa_landcover"
+      ]
+    },
+    {
+      "id": "river_stream",
+      "realm": "freshwater",
+      "name": {
+        "en": "River and stream",
+        "zh": "河流与溪流"
+      },
+      "source_ids": [
+        "usgs_water"
+      ]
+    },
+    {
+      "id": "lake_pond",
+      "realm": "freshwater",
+      "name": {
+        "en": "Lake and pond",
+        "zh": "湖泊与池塘"
+      },
+      "source_ids": [
+        "usgs_water"
+      ]
+    },
+    {
+      "id": "wetland",
+      "realm": "freshwater",
+      "name": {
+        "en": "Wetland",
+        "zh": "湿地"
+      },
+      "source_ids": [
+        "usgs_water"
+      ]
+    },
+    {
+      "id": "coastal_intertidal",
+      "realm": "marine",
+      "name": {
+        "en": "Coastal intertidal zone",
+        "zh": "海岸潮间带"
+      },
+      "source_ids": [
+        "noaa_marine"
+      ]
+    },
+    {
+      "id": "coral_reef",
+      "realm": "marine",
+      "name": {
+        "en": "Coral reef",
+        "zh": "珊瑚礁"
+      },
+      "source_ids": [
+        "noaa_marine"
+      ]
+    },
+    {
+      "id": "open_ocean",
+      "realm": "marine",
+      "name": {
+        "en": "Open ocean",
+        "zh": "远洋"
+      },
+      "source_ids": [
+        "noaa_marine"
+      ]
+    },
+    {
+      "id": "deep_sea",
+      "realm": "marine",
+      "name": {
+        "en": "Deep sea",
+        "zh": "深海"
+      },
+      "source_ids": [
+        "noaa_marine"
+      ]
+    }
+  ]
+}
