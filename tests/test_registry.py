@@ -1,6 +1,6 @@
 import copy
 import unittest
-from tools.validate import validate_resource, validate_directory
+from tools.validate import ROOT, validate_resource, validate_directory, validate_catalog
 
 
 def sample():
@@ -64,6 +64,40 @@ class RegistryTests(unittest.TestCase):
             for name in ['a', 'b']:
                 Path(folder, name + '.json').write_text(json.dumps(sample()))
             self.assertTrue(validate_directory(Path(folder)))
+
+    def test_public_catalog_indexes_every_resource_once(self):
+        self.assertEqual(validate_catalog(ROOT), [])
+
+    def test_catalog_rejects_unknown_ecosystem_and_unindexed_resource(self):
+        import json, shutil, tempfile
+        from pathlib import Path
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            shutil.copytree(ROOT / 'catalog', root / 'catalog')
+            shutil.copytree(ROOT / 'resources', root / 'resources')
+            index_file = root / 'catalog/resource-index.json'
+            index = json.loads(index_file.read_text())
+            index['resources'][0]['ecosystems'] = ['invented_biome']
+            index_file.write_text(json.dumps(index))
+            (root / 'resources/extra.json').write_text(json.dumps(sample() | {'id': 'extra'}))
+            errors = validate_catalog(root)
+            self.assertTrue(any('Unknown or missing ecosystem' in error for error in errors))
+            self.assertTrue(any('Unindexed resource' in error for error in errors))
+
+    def test_catalog_rejects_duplicate_id_and_path_escape(self):
+        import json, shutil, tempfile
+        from pathlib import Path
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            shutil.copytree(ROOT / 'catalog', root / 'catalog')
+            shutil.copytree(ROOT / 'resources', root / 'resources')
+            index_file = root / 'catalog/resource-index.json'
+            index = json.loads(index_file.read_text())
+            index['resources'].append(dict(index['resources'][0], path='../outside.json'))
+            index_file.write_text(json.dumps(index))
+            errors = validate_catalog(root)
+            self.assertTrue(any('Duplicate indexed resource ID' in error for error in errors))
+            self.assertTrue(any('Invalid or missing indexed resource path' in error for error in errors))
 
 
 if __name__ == '__main__':

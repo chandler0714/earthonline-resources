@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "description": "Canonical resource IDs are indexed once. domains describe material roles; ecosystem tags are optional and may contain multiple values.",
+  "domains": [
+    {
+      "id": "atmosphere",
+      "name": {
+        "en": "Atmosphere and gases",
+        "zh": "大气与气体"
+      }
+    },
+    {
+      "id": "hydrosphere",
+      "name": {
+        "en": "Water and ice",
+        "zh": "水与冰"
+      }
+    },
+    {
+      "id": "geosphere",
+      "name": {
+        "en": "Rocks and minerals",
+        "zh": "岩石与矿物"
+      }
+    },
+    {
+      "id": "pedosphere",
+      "name": {
+        "en": "Soils and sediments",
+        "zh": "土壤与沉积物"
+      }
+    },
+    {
+      "id": "biosphere",
+      "name": {
+        "en": "Living organisms and biological materials",
+        "zh": "生物与生物材料"
+      }
+    },
+    {
+      "id": "energy_flows",
+      "name": {
+        "en": "Natural energy flows",
+        "zh": "自然能量流"
+      }
+    }
+  ],
+  "resources": [
+    {
+      "id": "quartz",
+      "path": "resources/quartz.json",
+      "domains": [
+        "geosphere"
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "raw_water",
+      "path": "resources/raw_water.json",
+      "domains": [
+        "hydrosphere"
+      ],
+      "ecosystems": [
+        "river_stream",
+        "lake_pond",
+        "wetland",
+        "coastal_intertidal",
+        "coral_reef",
+        "open_ocean",
+        "deep_sea"
+      ]
+    },
+    {
+      "id": "water",
+      "path": "resources/water.json",
+      "domains": [
+        "hydrosphere"
+      ],
+      "ecosystems": []
+    }
+  ]
+}
