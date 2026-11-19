@@ -3,10 +3,21 @@
   "id": "sand",
   "name": {
     "zh": "砂",
-    "en": "Sand"
+    "en": "Sand",
+    "fr": "Sable",
+    "es": "Arena",
+    "ja": "砂",
+    "ko": "모래"
   },
   "category": "mixture",
   "description": "砂按沉积颗粒的粒径分类。Wentworth 粒级采用约 0.0625–2 毫米的标称粒径。砂粒可来自不同岩石、矿物或生物硬体碎片，组分比例依物源而变。",
+  "descriptions": {
+    "en": "Sand is a sediment grain-size class. On the Wentworth scale, the nominal grain size is about 0.0625–2 mm. Sand grains can come from various rocks, minerals, or fragments of hard parts of organisms. The proportions vary with the source material.",
+    "fr": "Le sable est une classe granulométrique des sédiments. L’échelle de Wentworth retient un diamètre nominal d’environ 0,0625 à 2 mm. Les grains peuvent provenir de diverses roches, de minéraux ou de fragments de parties dures d’organismes. Les proportions varient selon les matériaux d’origine.",
+    "es": "La arena es una clase granulométrica de los sedimentos. En la escala de Wentworth, el tamaño nominal de los granos es de aproximadamente 0,0625 a 2 mm. Los granos pueden proceder de distintas rocas, minerales o fragmentos de partes duras de organismos. Las proporciones varían según el material de origen.",
+    "ja": "砂は堆積物の粒径による分類の一つ。ウェントワースの粒度区分では公称粒径は約0.0625～2 mm。砂粒はさまざまな岩石、鉱物、生物の硬い部分の破片に由来することがあり、その割合は供給源によって変わる。",
+    "ko": "모래는 퇴적 입자의 크기에 따른 분류다. 웬트워스 입도 척도의 공칭 입자 지름은 약 0.0625~2 mm다. 모래 입자는 여러 암석이나 광물, 생물의 단단한 부분에서 나온 조각으로 이루어질 수 있으며, 구성 비율은 기원 물질에 따라 달라진다."
+  },
   "appearance": {
     "phase": "solid",
     "description": "可见松散颗粒。颜色、圆度与其他外形特征随物源和搬运过程而变。"

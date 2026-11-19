@@ -3,10 +3,21 @@
   "id": "gypsum",
   "name": {
     "zh": "石膏矿物",
-    "en": "Gypsum mineral"
+    "en": "Gypsum mineral",
+    "fr": "Gypse",
+    "es": "Yeso",
+    "ja": "石膏",
+    "ko": "석고"
   },
   "category": "mineral",
   "description": "石膏为含结晶水的硫酸钙矿物；天然矿石可含杂质，化学式表示矿物本身而非每块矿石的纯度。",
+  "descriptions": {
+    "en": "Gypsum is a calcium sulfate mineral that contains water of crystallization. Natural ore may contain impurities. The chemical formula describes the mineral itself. It does not specify the purity of an individual piece of ore.",
+    "fr": "Le gypse est un minéral de sulfate de calcium contenant de l’eau de cristallisation. Le minerai naturel peut contenir des impuretés. La formule chimique décrit le minéral lui-même et ne renseigne pas sur la pureté de chaque morceau de minerai.",
+    "es": "El yeso es un mineral de sulfato de calcio que contiene agua de cristalización. La mena natural puede contener impurezas. La fórmula química describe el mineral en sí y no determina la pureza de cada fragmento de mena.",
+    "ja": "石膏は結晶水を含む硫酸カルシウム鉱物。天然の鉱石には不純物が含まれることがある。化学式は鉱物そのものを表し、個々の鉱石の純度を示すものではない。",
+    "ko": "석고는 결정수를 포함하는 황산칼슘 광물이다. 천연 광석에는 불순물이 포함될 수 있다. 화학식은 광물 자체를 나타내며, 개별 광석의 순도를 나타내지는 않는다."
+  },
   "composition": {
     "formula": "CaSO4·2H2O",
     "source_ids": [

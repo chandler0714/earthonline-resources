@@ -3,10 +3,21 @@
   "id": "andropogon_gerardii",
   "name": {
     "zh": "大须芒草",
-    "en": "Big bluestem"
+    "en": "Big bluestem",
+    "fr": "Barbon de Gérard",
+    "es": "Popotillo gigante",
+    "ja": "ビッグブルーステム (Andropogon gerardii)",
+    "ko": "빅블루스템 (Andropogon gerardii)"
   },
   "category": "biological",
   "description": "Andropogon gerardii 是北美温带高草草原中的多年生禾草，在一些高草草原中占优势。它与其他草本植物为草原食草动物提供食物，其须根有助于稳定土壤。",
+  "descriptions": {
+    "en": "Andropogon gerardii is a perennial grass of North America’s temperate tallgrass prairies, where it dominates in some areas. Along with other herbaceous plants, it provides food for prairie herbivores. Its fibrous roots help stabilize the soil.",
+    "fr": "Andropogon gerardii est une graminée vivace des prairies tempérées à herbes hautes d’Amérique du Nord. Elle domine dans certaines de ces prairies. Avec d’autres plantes herbacées, elle nourrit les herbivores des prairies. Ses racines fasciculées contribuent à stabiliser le sol.",
+    "es": "Andropogon gerardii es una gramínea perenne de las praderas templadas de pastos altos de América del Norte. Es dominante en algunas de estas praderas. Junto con otras plantas herbáceas, sirve de alimento a los herbívoros de la pradera. Sus raíces fibrosas ayudan a estabilizar el suelo.",
+    "ja": "Andropogon gerardii は、北アメリカの温帯の高茎草原に生える多年生のイネ科植物で、一部の草原では優占する。他の草本とともに草原の草食動物の餌となり、ひげ根は土壌の安定に役立つ。",
+    "ko": "Andropogon gerardii는 북아메리카 온대의 키 큰 풀로 이루어진 초원에 자라는 여러해살이 벼과 식물이다. 일부 초원에서는 우점종이다. 다른 초본 식물과 함께 초원 초식동물의 먹이가 되며, 수염뿌리는 토양을 안정시키는 데 도움이 된다."
+  },
   "appearance": {
     "phase": "solid",
     "description": "高秆禾草。穗枝开展，形似火鸡脚趾。秋季穗头可呈紫红色，茎叶可转为红褐色。"

@@ -3,10 +3,21 @@
   "id": "strongylocentrotus_purpuratus",
   "name": {
     "zh": "紫海胆",
-    "en": "Purple sea urchin"
+    "en": "Purple sea urchin",
+    "fr": "Oursin pourpre (Strongylocentrotus purpuratus)",
+    "es": "Erizo de mar púrpura (Strongylocentrotus purpuratus)",
+    "ja": "アメリカムラサキウニ（Strongylocentrotus purpuratus）",
+    "ko": "보라색 성게 (Strongylocentrotus purpuratus)"
   },
   "category": "biological",
   "description": "Strongylocentrotus purpuratus 是生活在岩质海岸潮间带及相邻海带林环境中的海胆。它能取食巨藻，是这一食物关系中的消费者。",
+  "descriptions": {
+    "en": "Strongylocentrotus purpuratus is a sea urchin that lives in rocky coastal intertidal zones and adjacent kelp forest environments. It can feed on giant kelp and is a consumer in this feeding relationship.",
+    "fr": "Strongylocentrotus purpuratus est un oursin qui vit dans les zones intertidales des côtes rocheuses et les forêts de kelp voisines. Il peut se nourrir de varech géant et joue le rôle de consommateur dans cette relation alimentaire.",
+    "es": "Strongylocentrotus purpuratus es un erizo de mar que vive en las zonas intermareales de las costas rocosas y en los bosques de kelp adyacentes. Puede alimentarse de sargazo gigante y es un consumidor en esta relación alimentaria.",
+    "ja": "Strongylocentrotus purpuratus は岩礁海岸の潮間帯や隣接するケルプ林に生息するウニである。ジャイアントケルプを摂食することがあり、この食物関係における消費者である。",
+    "ko": "Strongylocentrotus purpuratus는 암석 해안의 조간대와 인접한 켈프 숲 환경에 사는 성게다. 자이언트켈프를 먹을 수 있으며, 이 먹이 관계에서 소비자다."
+  },
   "appearance": {
     "phase": "solid",
     "description": "紫色体表布有棘刺，细小的管足帮助其移动和附着于岩石。颜色、棘刺和管足可共同作为现场辨认线索。"

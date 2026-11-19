@@ -8,6 +8,10 @@ from jsonschema import Draft202012Validator, FormatChecker
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = json.loads((ROOT / 'schema/resource.schema.json').read_text())
 VALIDATOR = Draft202012Validator(SCHEMA, format_checker=FormatChecker())
+MOBILE_V1_TEXT = Draft202012Validator({
+    '$defs': SCHEMA['$defs'],
+    '$ref': '#/$defs/mobileV1LocalizedText',
+})
 
 
 def validate_resource(data):
@@ -46,7 +50,7 @@ def validate_resource(data):
     return errors
 
 
-def validate_directory(path):
+def validate_directory(path, *, mobile_v1=False):
     errors, seen = [], set()
     paths = sorted(Path(path).rglob('*.json'))
     if not paths:
@@ -54,7 +58,11 @@ def validate_directory(path):
     for file in paths:
         try:
             data = json.loads(file.read_text())
-            errors.extend(f'{file.name}: {e}' for e in validate_resource(data))
+            resource_errors = validate_resource(data)
+            errors.extend(f'{file.name}: {e}' for e in resource_errors)
+            if mobile_v1 and not resource_errors:
+                errors.extend(f"{file.name}: {'.'.join(map(str, e.absolute_path))}: {e.message}"
+                              for e in MOBILE_V1_TEXT.iter_errors(data))
             identifier = data.get('id')
             if identifier in seen:
                 errors.append(f'{file.name}: duplicate resource ID {identifier}')
@@ -154,7 +162,9 @@ def validate_catalog(root=ROOT):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('directory', nargs='?', type=Path, default=ROOT / 'resources')
-    errors = validate_directory(parser.parse_args().directory) + validate_catalog()
+    parser.add_argument('--mobile-v1', action='store_true', help='check all six names and descriptions')
+    args = parser.parse_args()
+    errors = validate_directory(args.directory, mobile_v1=args.mobile_v1) + validate_catalog()
     for error in errors:
         print(error)
     print(f'{len(errors)} validation errors; scientific review remains separate')

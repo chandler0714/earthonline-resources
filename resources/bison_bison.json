@@ -3,10 +3,21 @@
   "id": "bison_bison",
   "name": {
     "zh": "美洲野牛",
-    "en": "American bison"
+    "en": "American bison",
+    "fr": "Bison d’Amérique",
+    "es": "Bisonte americano",
+    "ja": "アメリカバイソン",
+    "ko": "아메리카들소"
   },
   "category": "biological",
   "description": "Bison bison 是北美大型食草哺乳动物，是温带草原的消费者。堪萨斯州孔扎草原生物站记录，大须芒草是当地高草草原野牛取食的多种禾草之一。",
+  "descriptions": {
+    "en": "Bison bison is a large North American herbivorous mammal and a consumer in temperate grasslands. The Konza Prairie Biological Station in Kansas records big bluestem as one of several grasses eaten by bison in the local tallgrass prairie.",
+    "fr": "Bison bison est un grand mammifère herbivore d’Amérique du Nord et un consommateur des prairies tempérées. La station biologique de Konza Prairie, au Kansas, indique que le barbon de Gérard fait partie des graminées consommées par les bisons dans la prairie locale à herbes hautes.",
+    "es": "Bison bison es un gran mamífero herbívoro de América del Norte y un consumidor de las praderas templadas. La Estación Biológica de Konza Prairie, en Kansas, incluye el popotillo gigante entre las gramíneas que comen los bisontes en la pradera local de pastos altos.",
+    "ja": "Bison bison は北アメリカの大型草食哺乳類で、温帯草原の消費者である。カンザス州のコンザ・プレーリー生物学研究所は、ビッグブルーステムが現地の高茎草原でバイソンが食べる複数のイネ科植物の一つであることを記録している。",
+    "ko": "Bison bison은 북아메리카의 대형 초식 포유류로, 온대 초원의 소비자다. 캔자스주의 콘자 프레리 생물연구소는 빅블루스템이 현지의 키 큰 풀로 이루어진 초원에서 들소가 먹는 여러 벼과 식물 가운데 하나라고 기록했다."
+  },
   "appearance": {
     "phase": "solid",
     "description": "成年个体肩部有明显隆起，头、肩和前腿的毛较长，后躯的毛较短。两性通常都有向上弯的短角。幼犊出生时毛色偏红褐，肩部隆起随成长逐渐明显。"

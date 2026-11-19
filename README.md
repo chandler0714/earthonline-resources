@@ -12,6 +12,8 @@ python3 -m unittest discover -s tests -v
 python3 tools/validate.py
 ```
 
+首版的名称和描述提供简中、英语、法语、西班牙语、日语和韩语。可用 `python3 tools/validate.py --mobile-v1` 检查六语完整性。稳定 ID 沿用原值。译文与科学事实一起进入固定提交审核，校验不授予发布权限。
+
 `schema/resource.schema.json` 是结构契约。`resources/` 收录待科学审核的候选条目。结构校验检查格式与内部引用。来源必须支持具体主张，AI 无法核实的内容进入待补证状态。
 
 `catalog/ecosystems.json` 给陆地、淡水和海洋生态提供稳定分类 ID；`catalog/resource-index.json` 将每个资源 ID 恰好登记一次，并可附多个生态标签。有依据的生物条目还可以标记生产者、消费者、碎屑食者和分解者。化学物质、矿物等跨生态资源可不指定生态标签。资源仍以稳定 ID 保存为独立 JSON，生态分类用于浏览和筛选，不代表资源一定出现在每颗星球的每个对应区域。新增资源时同时更新索引；校验器会拒绝漏登、重复 ID、未知生态标签及越界路径。首版资源覆盖缺口见 `catalog/coverage.md`。

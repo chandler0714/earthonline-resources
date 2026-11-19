@@ -3,10 +3,21 @@
   "id": "ondatra_zibethicus",
   "name": {
     "zh": "麝鼠",
-    "en": "Muskrat"
+    "en": "Muskrat",
+    "fr": "Rat musqué (Ondatra zibethicus)",
+    "es": "Rata almizclera (Ondatra zibethicus)",
+    "ja": "マスクラット（Ondatra zibethicus）",
+    "ko": "사향쥐 (Ondatra zibethicus)"
   },
   "category": "biological",
   "description": "Ondatra zibethicus 是生活在沼泽、池塘、湖泊和河流附近的哺乳动物。它主要取食草本植物，也会摄食小型动物。宽叶香蒲的根与根茎是其植物食物之一，因而可记录为湿地消费者。",
+  "descriptions": {
+    "en": "Ondatra zibethicus is a mammal that lives near marshes, ponds, lakes and rivers. It feeds mainly on herbaceous plants, but also eats small animals. The roots and rhizomes of broadleaf cattail are among its plant foods, so it can be recorded as a wetland consumer.",
+    "fr": "Ondatra zibethicus est un mammifère qui vit à proximité de marais, d'étangs, de lacs et de rivières. Il se nourrit surtout de plantes herbacées, mais aussi de petits animaux. Les racines et les rhizomes de la massette à larges feuilles font partie de ses aliments végétaux. Il peut donc être décrit comme un consommateur des zones humides.",
+    "es": "Ondatra zibethicus es un mamífero que vive cerca de pantanos, estanques, lagos y ríos. Se alimenta principalmente de plantas herbáceas, pero también come animales pequeños. Las raíces y los rizomas de la espadaña de hoja ancha forman parte de sus alimentos vegetales, por lo que puede registrarse como consumidor de los humedales.",
+    "ja": "Ondatra zibethicus は沼地、池、湖、河川の近くに生息する哺乳類である。主に草本植物を食べるが、小さな動物も摂食する。ガマ（Typha latifolia）の根と根茎は植物性の食物の一つであり、湿地の消費者として記録できる。",
+    "ko": "Ondatra zibethicus는 늪, 연못, 호수와 하천 근처에 사는 포유류다. 주로 초본식물을 먹지만 작은 동물도 먹는다. 큰부들(Typha latifolia)의 뿌리와 뿌리줄기는 식물성 먹이 가운데 하나이므로 습지의 소비자로 기록할 수 있다."
+  },
   "appearance": {
     "phase": "solid",
     "description": "具有浓密褐色毛发、较大的头部和藏在毛中的小耳。细长、带鳞的尾部是与外形相似的河狸区分时可观察的线索。"

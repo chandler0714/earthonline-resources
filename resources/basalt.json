@@ -3,10 +3,21 @@
   "id": "basalt",
   "name": {
     "zh": "玄武岩",
-    "en": "Basalt"
+    "en": "Basalt",
+    "fr": "Basalte",
+    "es": "Basalto",
+    "ja": "玄武岩",
+    "ko": "현무암"
   },
   "category": "mixture",
   "description": "本条目指喷出形成的镁铁质玄武岩，常见组成矿物有斜长石、辉石和橄榄石。不同熔岩流和样本的矿物比例、孔隙及风化状况可不同。",
+  "descriptions": {
+    "en": "This entry describes mafic basalt formed by volcanic eruption. Common constituent minerals include plagioclase, pyroxene, and olivine. Mineral proportions, porosity, and the degree of weathering can vary among lava flows and samples.",
+    "fr": "Cette fiche décrit un basalte mafique formé lors d’une éruption volcanique. Le plagioclase, le pyroxène et l’olivine figurent parmi ses minéraux courants. Les proportions minérales, la porosité et le degré d’altération peuvent varier selon les coulées de lave et les échantillons.",
+    "es": "Esta ficha describe el basalto máfico formado por erupciones volcánicas. Entre sus minerales habituales se encuentran la plagioclasa, el piroxeno y el olivino. Las proporciones minerales, la porosidad y el grado de meteorización pueden variar entre coladas de lava y muestras.",
+    "ja": "火山噴出で形成された苦鉄質の玄武岩。主な構成鉱物には斜長石、輝石、かんらん石がある。鉱物の割合、空隙率、風化の程度は、溶岩流や試料によって異なることがある。",
+    "ko": "화산 분출로 형성된 고철질 현무암을 가리킨다. 흔한 구성 광물로는 사장석, 휘석, 감람석이 있다. 광물의 비율, 공극률, 풍화 정도는 용암류와 시료에 따라 다를 수 있다."
+  },
   "appearance": {
     "phase": "solid",
     "description": "通常呈灰黑到黑色，常见细粒结构。有些样本可见气孔或较大的早期结晶矿物。"

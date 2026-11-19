@@ -3,10 +3,21 @@
   "id": "macrocystis_pyrifera",
   "name": {
     "zh": "巨藻",
-    "en": "Giant kelp"
+    "en": "Giant kelp",
+    "fr": "Varech géant (Macrocystis pyrifera)",
+    "es": "Sargazo gigante (Macrocystis pyrifera)",
+    "ja": "ジャイアントケルプ（Macrocystis pyrifera）",
+    "ko": "자이언트켈프 (Macrocystis pyrifera)"
   },
   "category": "biological",
   "description": "Macrocystis pyrifera 是形成海带林的大型褐藻。它在近岸水下岩礁上固着，是依赖光合作用的生产者，也为鱼类与无脊椎动物提供庇护。紫海胆可取食巨藻。",
+  "descriptions": {
+    "en": "Macrocystis pyrifera is a large brown alga that forms kelp forests. It anchors to submerged rocky reefs near shore and is a producer dependent on photosynthesis. It also provides shelter for fish and invertebrates. Purple sea urchins can feed on giant kelp.",
+    "fr": "Macrocystis pyrifera est une grande algue brune qui forme des forêts de kelp. Elle se fixe aux récifs rocheux submergés près du littoral et constitue un producteur dépendant de la photosynthèse. Elle offre aussi un abri aux poissons et aux invertébrés. Les oursins pourpres peuvent se nourrir de ce varech géant.",
+    "es": "Macrocystis pyrifera es un alga parda de gran tamaño que forma bosques de kelp. Se fija a arrecifes rocosos sumergidos cercanos a la costa y es un organismo productor que depende de la fotosíntesis. También ofrece refugio a peces e invertebrados. Los erizos de mar púrpura pueden alimentarse de este sargazo gigante.",
+    "ja": "Macrocystis pyrifera はケルプ林を形成する大型の褐藻である。沿岸の水中岩礁に付着し、光合成に依存する生産者で、魚類や無脊椎動物に隠れ場所も提供する。アメリカムラサキウニはこのジャイアントケルプを摂食することがある。",
+    "ko": "Macrocystis pyrifera는 켈프 숲을 형성하는 대형 갈조류다. 연안의 수중 암초에 부착하며 광합성에 의존하는 생산자다. 또한 어류와 무척추동물에게 은신처를 제공한다. 보라색 성게(Strongylocentrotus purpuratus)는 이 자이언트켈프를 먹을 수 있다."
+  },
   "appearance": {
     "phase": "solid",
     "description": "藻体具有藻叶、气囊与底部固着器。气囊帮助藻体朝光照方向伸展，固着器将其附着在海底，藻体可在水面形成冠层。"

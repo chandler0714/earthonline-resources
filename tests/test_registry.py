@@ -46,6 +46,23 @@ class RegistryTests(unittest.TestCase):
         observe['inputs'] = [{'resource_id': 'water', 'description': 'wrong input'}]
         self.assertTrue(validate_resource(d))
 
+    def test_mobile_v1_text_preflight_is_stricter_than_contributor_checks(self):
+        import json, tempfile
+        from pathlib import Path
+        d = sample()
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / 'water.json'
+            path.write_text(json.dumps(d))
+            self.assertEqual(validate_directory(folder), [])
+            self.assertTrue(validate_directory(folder, mobile_v1=True))
+            d['name'].update(fr='Eau', es='Agua', ja='水', ko='물')
+            d['descriptions'] = {'en': 'Liquid water', 'fr': 'Eau liquide', 'es': 'Agua líquida', 'ja': '液体の水', 'ko': '액체 상태의 물'}
+            path.write_text(json.dumps(d))
+            self.assertEqual(validate_directory(folder, mobile_v1=True), [])
+            d['descriptions']['es'] = '\u3000\u200b'
+            path.write_text(json.dumps(d))
+            self.assertTrue(validate_directory(folder, mobile_v1=True))
+
     def test_acquisition_is_required(self):
         d = sample(); del d['acquisition']
         self.assertTrue(validate_resource(d))

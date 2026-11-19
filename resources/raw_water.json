@@ -3,10 +3,21 @@
   "id": "raw_water",
   "name": {
     "zh": "天然水样",
-    "en": "Natural water sample"
+    "en": "Natural water sample",
+    "fr": "Échantillon d'eau naturelle",
+    "es": "Muestra de agua natural",
+    "ja": "天然水試料",
+    "ko": "자연수 시료"
   },
   "category": "mixture",
   "description": "河流、湖泊、湿地或地下含水层中的天然水样。可含溶解物或悬浮物，成分随来源而变，缺少具体水样分析时比例未知。",
+  "descriptions": {
+    "en": "A natural water sample from a river, lake, wetland or underground aquifer. It may contain dissolved or suspended substances. Composition varies with the source, and proportions remain unknown without analysis of the specific sample.",
+    "fr": "Échantillon d'eau naturelle provenant d'une rivière, d'un lac, d'une zone humide ou d'un aquifère souterrain. Il peut contenir des substances dissoutes ou en suspension. Sa composition varie selon l'origine et les proportions restent inconnues en l'absence d'analyse de l'échantillon concerné.",
+    "es": "Muestra de agua natural de un río, lago, humedal o acuífero subterráneo. Puede contener sustancias disueltas o en suspensión. La composición varía según su origen y las proporciones se desconocen sin un análisis de la muestra concreta.",
+    "ja": "河川、湖沼、湿地、地下の帯水層に由来する天然水の試料。溶存物質や懸濁物質を含む場合があり、組成は採取元によって異なる。個々の試料の分析がなければ、各成分の割合は不明である。",
+    "ko": "하천, 호수, 습지 또는 지하 대수층에서 얻은 자연수 시료. 용존 물질이나 부유 물질을 포함할 수 있으며, 조성은 출처에 따라 달라진다. 해당 시료의 구체적인 분석이 없으면 성분 비율은 알 수 없다."
+  },
   "appearance": {
     "phase": "liquid",
     "description": "可呈清澈或有色。细小颗粒可能形成浑浊，部分溶解物无法从外观看出。"

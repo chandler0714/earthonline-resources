@@ -3,10 +3,21 @@
   "id": "apostichopus_californicus",
   "name": {
     "zh": "加利福尼亚海参",
-    "en": "California sea cucumber"
+    "en": "California sea cucumber",
+    "fr": "Holothurie de Californie (Apostichopus californicus)",
+    "es": "Pepino de mar de California (Apostichopus californicus)",
+    "ja": "カリフォルニアナマコ（Apostichopus californicus）",
+    "ko": "캘리포니아 해삼 (Apostichopus californicus)"
   },
   "category": "biological",
   "description": "Apostichopus californicus 的旧名包括 Parastichopus californicus。它是海底表栖的沉积物摄食者，摄取有机碎屑和小生物，可记录为碎屑食消费者。其栖境包括近岸岩石、砂及含海藻的底质。这里的碎屑食角色指动物摄食，未将其归为微生物分解者。",
+  "descriptions": {
+    "en": "Former names of Apostichopus californicus include Parastichopus californicus. It is an epifaunal deposit feeder that consumes organic detritus and small organisms and can be recorded as a detritivorous consumer. Its habitats include nearshore rocks, sand and substrates with seaweed. Here, the detritivorous role refers to feeding by an animal. It is not classified as a microbial decomposer.",
+    "fr": "Apostichopus californicus a notamment porté le nom de Parastichopus californicus. C'est un animal épibenthique déposivore qui ingère des débris organiques et de petits organismes et peut être décrit comme un consommateur détritivore. Ses habitats comprennent les rochers côtiers, le sable et les substrats portant des algues. Le rôle détritivore désigne ici l'alimentation d'un animal. Il n'est pas classé parmi les décomposeurs microbiens.",
+    "es": "Entre los nombres anteriores de Apostichopus californicus figura Parastichopus californicus. Es un animal epibentónico depositívoro que ingiere detritos orgánicos y pequeños organismos y puede registrarse como consumidor detritívoro. Sus hábitats incluyen rocas costeras, arena y sustratos con algas. Aquí, el papel detritívoro se refiere a la alimentación de un animal. No se clasifica como descomponedor microbiano.",
+    "ja": "Apostichopus californicus の旧学名には Parastichopus californicus がある。海底表面で暮らす堆積物食者で、有機デトリタスや小さな生物を摂食し、デトリタス食の消費者として記録できる。生息環境には沿岸の岩、砂、海藻のある底質が含まれる。ここでのデトリタス食という役割は動物の摂食を指し、分解微生物には分類していない。",
+    "ko": "Apostichopus californicus의 이전 학명에는 Parastichopus californicus가 있다. 해저 표면에 사는 퇴적물 섭식 동물로, 유기 쇄설물과 작은 생물을 먹으며 쇄설물 섭식 소비자로 기록할 수 있다. 서식지에는 연안의 암석, 모래, 해조류가 있는 바닥이 포함된다. 여기서 쇄설물 섭식이라는 역할은 동물의 먹이 섭취를 뜻하며, 분해 미생물로 분류한 것은 아니다."
+  },
   "appearance": {
     "phase": "solid",
     "description": "体柔软、呈圆筒状，表皮可为红褐色至黄色，背部可见锥形肉质突起，腹面管足较密集。口周具有可缩回的摄食触手。"

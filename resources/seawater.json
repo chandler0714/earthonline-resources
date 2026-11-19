@@ -3,10 +3,21 @@
   "id": "seawater",
   "name": {
     "zh": "海水",
-    "en": "Seawater"
+    "en": "Seawater",
+    "fr": "Eau de mer",
+    "es": "Agua de mar",
+    "ja": "海水",
+    "ko": "해수"
   },
   "category": "mixture",
   "description": "海水是含溶解盐的水体。以下质量分数仅表示 NOAA 所述约 35‰ 平均盐度的参考样本；实际盐度受降水、蒸发及地点影响，悬浮物和微量组分尚未列出。",
+  "descriptions": {
+    "en": "Seawater is water containing dissolved salts. The mass fractions below describe only a reference sample representing the approximately 35‰ average salinity described by NOAA. Actual salinity is affected by precipitation, evaporation and location. Suspended matter and trace components have not been listed.",
+    "fr": "L'eau de mer est une eau contenant des sels dissous. Les fractions massiques ci-dessous ne représentent qu'un échantillon de référence correspondant à la salinité moyenne d'environ 35 ‰ indiquée par la NOAA. La salinité réelle dépend des précipitations, de l'évaporation et du lieu. Les matières en suspension et les constituants à l'état de traces ne sont pas encore répertoriés.",
+    "es": "El agua de mar es agua que contiene sales disueltas. Las fracciones másicas que figuran a continuación solo representan una muestra de referencia correspondiente a la salinidad media de aproximadamente 35 ‰ indicada por la NOAA. La salinidad real depende de las precipitaciones, la evaporación y el lugar. Las sustancias en suspensión y los componentes traza aún no se han enumerado.",
+    "ja": "海水は溶存塩類を含む水である。以下の質量分率は、NOAA が述べる平均塩分濃度約 35‰ に対応した参照試料のみを表す。実際の塩分濃度は降水、蒸発、場所の影響を受け、懸濁物質や微量成分はまだ記載していない。",
+    "ko": "해수는 용존 염류를 포함한 물이다. 아래 질량 분율은 NOAA가 제시한 약 35‰의 평균 염분에 해당하는 기준 시료만을 나타낸다. 실제 염분은 강수, 증발, 장소의 영향을 받으며, 부유 물질과 미량 성분은 아직 나열하지 않았다."
+  },
   "composition": {
     "components": [
       {

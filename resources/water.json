@@ -3,10 +3,21 @@
   "id": "water",
   "name": {
     "zh": "水",
-    "en": "Water"
+    "en": "Water",
+    "fr": "Eau",
+    "es": "Agua",
+    "ja": "水",
+    "ko": "물"
   },
   "category": "substance",
   "description": "化学物质 H₂O。本条记录同一物质的液相、固相和气相。天然水体与水汽所在的空气可含其他成分。",
+  "descriptions": {
+    "en": "The chemical substance H₂O. This entry covers the liquid, solid and gaseous phases of the same substance. Natural bodies of water and the air containing water vapor may contain other components.",
+    "fr": "La substance chimique H₂O. Cette fiche décrit les phases liquide, solide et gazeuse de cette même substance. Les eaux naturelles et l'air contenant de la vapeur d'eau peuvent contenir d'autres constituants.",
+    "es": "La sustancia química H₂O. Esta ficha abarca las fases líquida, sólida y gaseosa de la misma sustancia. Las masas de agua naturales y el aire que contiene vapor de agua pueden contener otros componentes.",
+    "ja": "化学物質 H₂O。同じ物質の液相、固相、気相をこの項目で扱う。自然の水域や、水蒸気を含む空気には、ほかの成分が含まれることがある。",
+    "ko": "화학 물질 H₂O. 이 항목은 같은 물질의 액상, 고상, 기상을 다룬다. 자연의 수체와 수증기를 포함한 공기에는 다른 성분이 들어 있을 수 있다."
+  },
   "composition": {
     "formula": "H2O",
     "source_ids": [

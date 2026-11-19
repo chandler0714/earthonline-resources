@@ -20,6 +20,18 @@
           "type": "string",
           "minLength": 1,
           "maxLength": 4000
+        },
+        "fr": {
+          "$ref": "#/$defs/localizedDisplayText"
+        },
+        "es": {
+          "$ref": "#/$defs/localizedDisplayText"
+        },
+        "ja": {
+          "$ref": "#/$defs/localizedDisplayText"
+        },
+        "ko": {
+          "$ref": "#/$defs/localizedDisplayText"
         }
       },
       "required": [
@@ -40,6 +52,28 @@
       "type": "string",
       "minLength": 1,
       "maxLength": 4000
+    },
+    "descriptions": {
+      "type": "object",
+      "minProperties": 1,
+      "properties": {
+        "en": {
+          "$ref": "#/$defs/localizedDisplayText"
+        },
+        "fr": {
+          "$ref": "#/$defs/localizedDisplayText"
+        },
+        "es": {
+          "$ref": "#/$defs/localizedDisplayText"
+        },
+        "ja": {
+          "$ref": "#/$defs/localizedDisplayText"
+        },
+        "ko": {
+          "$ref": "#/$defs/localizedDisplayText"
+        }
+      },
+      "additionalProperties": false
     },
     "composition": {
       "type": "object",
@@ -461,5 +495,84 @@
         }
       }
     }
-  ]
+  ],
+  "$defs": {
+    "localizedDisplayText": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000,
+      "pattern": "[^\u0000- \u007f-\u00a0\u00ad\u061c\u1680\u180e\u2000-\u200f\u2028-\u202f\u205f-\u206f\u3000\ufeff]"
+    },
+    "mobileV1LocalizedText": {
+      "type": "object",
+      "required": [
+        "name",
+        "description",
+        "descriptions"
+      ],
+      "properties": {
+        "name": {
+          "type": "object",
+          "required": [
+            "zh",
+            "en",
+            "fr",
+            "es",
+            "ja",
+            "ko"
+          ],
+          "properties": {
+            "zh": {
+              "$ref": "#/$defs/localizedDisplayText"
+            },
+            "en": {
+              "$ref": "#/$defs/localizedDisplayText"
+            },
+            "fr": {
+              "$ref": "#/$defs/localizedDisplayText"
+            },
+            "es": {
+              "$ref": "#/$defs/localizedDisplayText"
+            },
+            "ja": {
+              "$ref": "#/$defs/localizedDisplayText"
+            },
+            "ko": {
+              "$ref": "#/$defs/localizedDisplayText"
+            }
+          }
+        },
+        "description": {
+          "$ref": "#/$defs/localizedDisplayText"
+        },
+        "descriptions": {
+          "type": "object",
+          "required": [
+            "en",
+            "fr",
+            "es",
+            "ja",
+            "ko"
+          ],
+          "properties": {
+            "en": {
+              "$ref": "#/$defs/localizedDisplayText"
+            },
+            "fr": {
+              "$ref": "#/$defs/localizedDisplayText"
+            },
+            "es": {
+              "$ref": "#/$defs/localizedDisplayText"
+            },
+            "ja": {
+              "$ref": "#/$defs/localizedDisplayText"
+            },
+            "ko": {
+              "$ref": "#/$defs/localizedDisplayText"
+            }
+          }
+        }
+      }
+    }
+  }
 }

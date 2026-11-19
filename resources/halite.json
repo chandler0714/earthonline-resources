@@ -3,10 +3,21 @@
   "id": "halite",
   "name": {
     "zh": "石盐矿物",
-    "en": "Halite"
+    "en": "Halite",
+    "fr": "Halite",
+    "es": "Halita",
+    "ja": "岩塩",
+    "ko": "암염"
   },
   "category": "mineral",
   "description": "石盐是氯化钠矿物。岩盐和盐壳可夹有黏土、伴生矿物或卤水。整块样品的成分和食用适用性需分别核实。",
+  "descriptions": {
+    "en": "Halite is a sodium chloride mineral. Rock salt and salt crusts may contain clay, associated minerals, or brine. The composition of the whole sample and its suitability for consumption must be verified separately.",
+    "fr": "La halite est un minéral de chlorure de sodium. Le sel gemme et les croûtes salines peuvent contenir de l’argile, des minéraux associés ou de la saumure. La composition de l’échantillon entier et son aptitude à la consommation doivent être vérifiées séparément.",
+    "es": "La halita es un mineral de cloruro de sodio. La sal gema y las costras salinas pueden contener arcilla, minerales asociados o salmuera. La composición de la muestra completa y su aptitud para el consumo deben verificarse por separado.",
+    "ja": "岩塩は塩化ナトリウムの鉱物。岩塩の塊や塩殻には、粘土、共存鉱物、濃い塩水が含まれることがある。試料全体の組成と食用への適合性は、それぞれ確認する必要がある。",
+    "ko": "암염은 염화나트륨 광물이다. 암염 덩어리와 염류가 굳은 표층에는 점토, 수반 광물 또는 염수가 섞여 있을 수 있다. 시료 전체의 조성과 식용 적합성은 각각 확인해야 한다."
+  },
   "composition": {
     "formula": "NaCl",
     "source_ids": [

@@ -3,10 +3,21 @@
   "id": "trametes_versicolor",
   "name": {
     "zh": "云芝栓孔菌",
-    "en": "Turkey tail fungus"
+    "en": "Turkey tail fungus",
+    "fr": "Tramète versicolore",
+    "es": "Hongo cola de pavo",
+    "ja": "カワラタケ",
+    "ko": "구름버섯"
   },
   "category": "biological",
   "description": "Trametes versicolor 是多孔菌科的木材分解者，常见于硬木枯木，可造成白腐。北卡罗来纳州 Hollow Rock Nature Park 的调查记录了云芝栓孔菌、北美白栎和白尾鹿在同一地点出现。该调查提供地点层面的共现记录。",
+  "descriptions": {
+    "en": "Trametes versicolor is a wood-decomposing fungus in the Polyporaceae family. It is commonly found on dead hardwood and can cause white rot. A survey of Hollow Rock Nature Park in North Carolina recorded turkey tail fungus, white oak and white-tailed deer at the same site. The survey documents their co-occurrence at the site level.",
+    "fr": "Trametes versicolor est un champignon décomposeur du bois de la famille des Polyporacées. Il se rencontre couramment sur le bois mort de feuillus et peut provoquer une pourriture blanche. Un inventaire à Hollow Rock Nature Park, en Caroline du Nord, a recensé la tramète versicolore, le chêne blanc d’Amérique et le cerf de Virginie. Le relevé documente leur présence sur un même site.",
+    "es": "Trametes versicolor es un hongo de la familia de las poliporáceas que descompone la madera. Se encuentra con frecuencia en la madera muerta de árboles de hoja ancha y puede causar pudrición blanca. Un inventario en Hollow Rock Nature Park, Carolina del Norte, registró al hongo cola de pavo, el roble blanco americano y el venado cola blanca. El inventario documenta su presencia en un mismo sitio.",
+    "ja": "Trametes versicolor は、タマチョレイタケ科の木材分解菌である。広葉樹の枯れ木によく見られ、白色腐朽を起こすことがある。ノースカロライナ州のホロー・ロック自然公園（Hollow Rock Nature Park）の調査では、カワラタケ、ホワイトオーク、オジロジカが記録されている。この調査は、3種が同じ地点で見られたことを記録している。",
+    "ko": "Trametes versicolor는 구멍장이버섯과에 속하는 목재 분해 균류다. 활엽수의 죽은 목재에서 흔히 발견되며 백색부후를 일으킬 수 있다. 노스캐롤라이나주의 홀로 록 자연공원(Hollow Rock Nature Park) 조사에서는 구름버섯, 백참나무, 흰꼬리사슴이 기록되었다. 이 조사는 세 종이 같은 지점에서 관찰되었음을 보여 준다."
+  },
   "appearance": {
     "phase": "solid",
     "description": "子实体薄而坚韧，常呈扇形或半圆形层叠排列。上表面有明显同心色带，下面有浅色小孔。孔面与色带合看有助于区分外观相近的菌种。"
