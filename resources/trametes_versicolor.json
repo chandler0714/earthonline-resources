@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "id": "trametes_versicolor",
+  "name": {
+    "zh": "云芝栓孔菌",
+    "en": "Turkey tail fungus"
+  },
+  "category": "biological",
+  "description": "Trametes versicolor 是多孔菌科的木材分解者，常见于硬木枯木，可造成白腐。北卡罗来纳州 Hollow Rock Nature Park 的调查记录了云芝栓孔菌、北美白栎和白尾鹿在同一地点出现。该调查提供地点层面的共现记录。",
+  "appearance": {
+    "phase": "solid",
+    "description": "子实体薄而坚韧，常呈扇形或半圆形层叠排列。上表面有明显同心色带，下面有浅色小孔。孔面与色带合看有助于区分外观相近的菌种。"
+  },
+  "properties": [],
+  "formation": "在枯木等木质基质上形成子实体。硬木上的白腐是其在林地承担的分解作用。",
+  "storage": "保留子实体和原处基质的照片。孔面未入镜的记录保留待核对。",
+  "applications": [
+    "识别木质残体上的林地分解者",
+    "记录硬木白腐的生态作用"
+  ],
+  "acquisition": [
+    {
+      "kind": "observation",
+      "operation": "other",
+      "description": "从许可路径原地记录枯木与扇形子实体。孔面可见时同时拍摄色带、孔面和基质。",
+      "conditions": [
+        "遵从地点开放规定和园区规则",
+        "子实体与附着的木材留在原处"
+      ],
+      "inputs": [],
+      "equipment": [
+        "相机或手机"
+      ],
+      "source_ids": [
+        "ncsu_fungarium",
+        "nps_field_ethics"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ncsu_fungarium",
+      "url": "https://ncslg.cals.ncsu.edu/trametes-versicolor-l-lloyd/",
+      "title": "North Carolina State University, Larry F Grand Mycological Herbarium: Trametes versicolor",
+      "locator": "Macroscopic characters (shape, pileus, pore surface) and Habitat characters (substrate/host and type of decay).",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usfs_eastern_macrofungi",
+      "url": "https://www.nrs.fs.usda.gov/pubs/gtr/gtr_nrs79r.pdf",
+      "title": "USDA Forest Service, Field Guide to Common Macrofungi in Eastern Forests and Their Ecosystem Functions (GTR-NRS-79)",
+      "locator": "Printed page 42, Turkey Tail entry, Identification and Ecosystem function.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "cas_iae_specimens",
+      "url": "https://iae.cas.cn/gb2019/bbg_iae/zs_bbg/",
+      "title": "中国科学院沈阳应用生态研究所标本展示",
+      "locator": "标本展示第 14 项，云芝栓孔菌（Trametes versicolor）。",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "ncparks_site_survey",
+      "url": "https://auth1.dpr.ncparks.gov/ncbp_neho/species_by_site.php",
+      "title": "North Carolina State Parks, New Hope Creek Biodiversity Survey 2021–2022",
+      "locator": "Species by site table, Hollow Rock Nature Park rows for Quercus alba (Hardwood Trees), Odocoileus virginianus (Mammals), and Trametes versicolor (Fungi). Supports individual occurrence records at a common site.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_field_ethics",
+      "url": "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm",
+      "title": "National Park Service, Leave No Trace Seven Principles",
+      "locator": "Plan Ahead and Prepare; Travel and Camp on Durable Surfaces; Leave What You Find.",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

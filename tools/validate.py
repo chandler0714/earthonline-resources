@@ -31,10 +31,7 @@ def validate_resource(data):
             for child in value:
                 walk(child)
     walk(data)
-    composition = data['composition']
-    if data['category'] == 'mixture' and 'components' not in composition:
-        errors.append('Mixtures need components, not a single formula')
-    components = composition.get('components', [])
+    components = data.get('composition', {}).get('components', [])
     if any(c['fraction_min'] > c['fraction_max'] for c in components):
         errors.append('Inverted composition interval')
     if sum(c['fraction_min'] for c in components) > 1.00000001:
@@ -120,16 +117,31 @@ def validate_catalog(root=ROOT):
             errors.append(f'Invalid or missing indexed resource path: {relative}')
             continue
         try:
-            actual_id = json.loads(path.read_text()).get('id')
+            resource = json.loads(path.read_text())
+            actual_id = resource.get('id')
         except (OSError, ValueError) as error:
             errors.append(f'Indexed resource cannot be read: {relative}: {error}')
             continue
         if actual_id != identifier:
             errors.append(f'Indexed resource ID mismatch: {relative}')
-        if not item.get('domains') or any(domain not in domain_ids for domain in item['domains']):
+        domains, habitats = item.get('domains'), item.get('ecosystems')
+        valid_domains = isinstance(domains, list) and domains and all(
+            isinstance(domain, str) and domain in domain_ids for domain in domains)
+        valid_habitats = isinstance(habitats, list) and all(
+            isinstance(tag, str) and tag in ecosystem_ids for tag in habitats)
+        if not valid_domains:
             errors.append(f'Unknown or missing domain for: {identifier}')
-        if not isinstance(item.get('ecosystems'), list) or any(tag not in ecosystem_ids for tag in item['ecosystems']):
+        if not valid_habitats:
             errors.append(f'Unknown or missing ecosystem list for: {identifier}')
+        if 'ecological_roles' in item:
+            roles = item['ecological_roles']
+            allowed = {'producer', 'consumer', 'detritivore', 'decomposer'}
+            if (resource.get('category') != 'biological'
+                    or not valid_domains or 'biosphere' not in domains or not valid_habitats or not habitats
+                    or not isinstance(roles, list) or not roles
+                    or any(not isinstance(role, str) or role not in allowed for role in roles)
+                    or len(set(roles)) != len(roles)):
+                errors.append(f'Invalid ecological roles for: {identifier}')
 
     actual_paths = {path.relative_to(root).as_posix() for path in resources_root.rglob('*.json')}
     for path in sorted(actual_paths - paths):

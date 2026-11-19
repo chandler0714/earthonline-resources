@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "id": "halite",
+  "name": {
+    "zh": "石盐矿物",
+    "en": "Halite"
+  },
+  "category": "mineral",
+  "description": "石盐是氯化钠矿物。岩盐和盐壳可夹有黏土、伴生矿物或卤水。整块样品的成分和食用适用性需分别核实。",
+  "composition": {
+    "formula": "NaCl",
+    "source_ids": [
+      "ugs_great_salt_lake"
+    ]
+  },
+  "appearance": {
+    "phase": "solid",
+    "description": "可呈白色、无色或半透明的立方晶体、阶梯状立方晶体及结晶盐壳。夹杂物可使样本带颜色。"
+  },
+  "properties": [],
+  "formation": "含钠和氯的盐水在蒸发浓缩到可以结晶时可析出石盐。干旱盆地的盐滩可形成盐壳，盐壳也可随来水和蒸发反复溶解与结晶。",
+  "storage": "分别标记并干燥存放固体样品，避免接触会溶解盐壳的水。",
+  "applications": [
+    "蒸发岩和盐壳地质标本",
+    "满足用途要求的岩盐可作工业盐原料"
+  ],
+  "acquisition": [
+    {
+      "kind": "direct_collection",
+      "operation": "collect",
+      "description": "在可接近且允许取样的露出盐壳处记录并取少量已辨识的矿物样本。",
+      "conditions": [
+        "现场存在可辨识的石盐晶体或盐壳",
+        "仅作矿物样本"
+      ],
+      "inputs": [],
+      "equipment": [],
+      "source_ids": [
+        "ugs_great_salt_lake",
+        "usgs_bonneville_hydrology"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ugs_great_salt_lake",
+      "url": "https://ugspub.nr.utah.gov/publications/public_information/pi-104.pdf",
+      "title": "Utah Geological Survey, Commonly Asked Questions About Utah’s Great Salt Lake and Lake Bonneville",
+      "locator": "What are those crystals in the lake? (printed page 14, halite formula and exposed salt-crust specimen)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usgs_bonneville_hydrology",
+      "url": "https://pubs.usgs.gov/wsp/2057/report.pdf",
+      "title": "USGS Water-Supply Paper 2057, Hydrology and Surface Morphology of the Bonneville Salt Flats and Pilot Valley Playa, Utah",
+      "locator": "Abstract (Great Salt Lake Desert, chloride zone and salt-crust dissolution/recrystallization)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usgs_salt_uses",
+      "url": "https://www.usgs.gov/centers/national-minerals-information-center/salt-statistics-and-information",
+      "title": "USGS National Minerals Information Center, Salt Statistics and Information",
+      "locator": "Salt Insights and Data (industrial salt uses)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usgs_evaporite_core",
+      "url": "https://pubs.usgs.gov/bul/1252b/report.pdf",
+      "title": "USGS Bulletin 1252-B",
+      "locator": "Lithology, pages B12–B14, halite and argillaceous halite",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

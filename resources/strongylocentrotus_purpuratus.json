@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "id": "strongylocentrotus_purpuratus",
+  "name": {
+    "zh": "紫海胆",
+    "en": "Purple sea urchin"
+  },
+  "category": "biological",
+  "description": "Strongylocentrotus purpuratus 是生活在岩质海岸潮间带及相邻海带林环境中的海胆。它能取食巨藻，是这一食物关系中的消费者。",
+  "appearance": {
+    "phase": "solid",
+    "description": "紫色体表布有棘刺，细小的管足帮助其移动和附着于岩石。颜色、棘刺和管足可共同作为现场辨认线索。"
+  },
+  "properties": [],
+  "formation": "自然种群在海岸栖境中生活并摄食藻类。海胆过度取食可使海带林退化为海胆荒漠，群落中其他捕食者也参与调节海胆数量。",
+  "storage": "保留原地影像及潮位、生境记录，海胆与附着岩石保持原状。",
+  "applications": [
+    "观察岩质海岸消费者",
+    "记录紫海胆与巨藻的取食关系及海带林群落变化"
+  ],
+  "acquisition": [
+    {
+      "kind": "observation",
+      "operation": "other",
+      "description": "在允许进入的潮间带观测区域，从稳固且无生物覆盖的位置观察可见海胆的颜色、棘刺和管足，并留下影像记录。",
+      "conditions": [
+        "遵从观测地点开放规定并事先核对潮汐与海况",
+        "以非接触方式观察，海胆留在原来的附着位置",
+        "避开生物覆盖表面，保持对海浪和退路的观察"
+      ],
+      "inputs": [],
+      "equipment": [
+        "相机或手机"
+      ],
+      "source_ids": [
+        "nps_cabrillo_urchin",
+        "nps_point_reyes_tidepooling"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nps_cabrillo_urchin",
+      "url": "https://www.nps.gov/cabr/learn/intertidal-field-guide.htm",
+      "title": "National Park Service, Cabrillo National Monument: Intertidal Field Guide",
+      "locator": "Sea Urchin (Strongylocentrotus purpuratus). Supports purple coloration, spines, tube feet, rock attachment, giant kelp feeding and urchin barrens.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "noaa_giant_kelp_food_edge",
+      "url": "https://olympiccoast.noaa.gov/living/marinelife/seaweed/",
+      "title": "NOAA Olympic Coast National Marine Sanctuary: Seaweeds",
+      "locator": "Giant Kelp, Macrocystis pyrifera, Eaten by. Independently lists purple urchins among consumers.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_channel_islands_kelp",
+      "url": "https://www.nps.gov/chis/learn/nature/kelp-forests.htm",
+      "title": "National Park Service, Channel Islands National Park: Kelp Forests",
+      "locator": "Ecology, discussion of sea urchin grazing and urchin barrens. Supports qualitative community interactions, with no population rate or threshold supplied here.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_point_reyes_tidepooling",
+      "url": "https://www.nps.gov/pore/planyourvisit/tidepooling.htm",
+      "title": "National Park Service, Point Reyes National Seashore: Tidepooling at Point Reyes National Seashore",
+      "locator": "Low Intertidal Zone; Exploring Safely, Check the Tide Table and Tread Lightly. Supports purple urchin habitat and observation with tide awareness, bare-ground footing and organisms left undisturbed.",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

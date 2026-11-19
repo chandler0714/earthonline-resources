@@ -6,53 +6,56 @@
     "en": "Natural water sample"
   },
   "category": "mixture",
-  "description": "组成随地点变化，未列出的溶解与悬浮物含量未知。",
-  "composition": {
-    "components": [
-      {
-        "name": "水及溶解或悬浮物",
-        "fraction_min": 0,
-        "fraction_max": 1
-      }
-    ],
-    "source_ids": [
-      "usgs"
-    ]
-  },
+  "description": "河流、湖泊、湿地或地下含水层中的天然水样。可含溶解物或悬浮物，成分随来源而变，缺少具体水样分析时比例未知。",
   "appearance": {
     "phase": "liquid",
-    "description": "无色透明，条件约 20°C、常压"
+    "description": "可呈清澈或有色。细小颗粒可能形成浑浊，部分溶解物无法从外观看出。"
   },
   "properties": [],
-  "formation": "液态水可由冷凝等过程形成",
-  "storage": "使用合适的密闭容器，避免污染",
+  "formation": "地表水随径流、河流和湖泊等相互联系。下渗可补给含水层，地下水也可从泉或河床回到地表。",
+  "storage": "天然水可位于河湖、湿地或含水层。用于观测的样本保留采样位置与来源类型。",
   "applications": [
-    "溶剂"
+    "用于记录水体来源与水质调查。"
   ],
   "acquisition": [
     {
       "kind": "direct_collection",
       "operation": "collect",
-      "description": "从液态水体收集",
+      "description": "按已知来源记录地表水或地下水样本。地表和地下水采用各自适用的现场采样规则。",
       "conditions": [
-        "存在液态水"
+        "具有明确且可访问的采样点",
+        "记录来源类型"
       ],
       "inputs": [],
       "equipment": [
-        "容器"
+        "适用于具体调查的水样容器"
       ],
       "source_ids": [
-        "usgs"
+        "usgs_sampling"
       ]
     }
   ],
   "sources": [
     {
-      "id": "usgs",
-      "url": "https://www.usgs.gov/special-topics/water-science-school/science/water-universal-solvent",
-      "title": "USGS Water the Universal Solvent",
-      "locator": "Dissolved substances",
-      "accessed": "2026-10-27"
+      "id": "usgs_cycle",
+      "url": "https://www.usgs.gov/water-science-school/text-description-usgs-water-cycle-diagram",
+      "title": "USGS Text Description of the Water Cycle Diagram",
+      "locator": "Pools store water and Fluxes move water between pools",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usgs_properties",
+      "url": "https://www.usgs.gov/special-topics/water-science-school/properties-water",
+      "title": "USGS Properties of Water",
+      "locator": "Water Color and Water, the Universal Solvent entries",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usgs_sampling",
+      "url": "https://www.usgs.gov/publications/chapter-a4-collection-water-samples",
+      "title": "USGS National Field Manual, Collection of Water Samples",
+      "locator": "Chapter A4, sections 4.1 and 4.2",
+      "accessed": "2026-11-20"
     }
   ],
   "review": {

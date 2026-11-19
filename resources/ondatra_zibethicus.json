@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "id": "ondatra_zibethicus",
+  "name": {
+    "zh": "麝鼠",
+    "en": "Muskrat"
+  },
+  "category": "biological",
+  "description": "Ondatra zibethicus 是生活在沼泽、池塘、湖泊和河流附近的哺乳动物。它主要取食草本植物，也会摄食小型动物。宽叶香蒲的根与根茎是其植物食物之一，因而可记录为湿地消费者。",
+  "appearance": {
+    "phase": "solid",
+    "description": "具有浓密褐色毛发、较大的头部和藏在毛中的小耳。细长、带鳞的尾部是与外形相似的河狸区分时可观察的线索。"
+  },
+  "properties": [],
+  "formation": "自然种群在水域周边生活并取食。取食水生植物可影响湿地植被和开阔水面的分布。",
+  "storage": "保留远距离观察的照片、日期和生境记录，动物继续留在自然栖境中。",
+  "applications": [
+    "观察湿地哺乳动物及其生境",
+    "记录消费者与香蒲等水生植物的关系"
+  ],
+  "acquisition": [
+    {
+      "kind": "observation",
+      "operation": "other",
+      "description": "从许可的观测位置远距离观察体形、毛色与尾部，可借助望远镜或变焦相机形成辨认记录。",
+      "conditions": [
+        "遵从观测地点的开放规定和野生动物观察规则",
+        "保持距离并让动物自然活动，动物靠近时后退",
+        "保持食物来源自然，不投喂、接触或追随动物"
+      ],
+      "inputs": [],
+      "equipment": [
+        "望远镜或变焦相机"
+      ],
+      "source_ids": [
+        "nps_muskrat",
+        "nps_wildlife_gear",
+        "nps_field_ethics"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nps_muskrat",
+      "url": "https://www.nps.gov/mnrr/learn/nature/muskrat.htm",
+      "title": "National Park Service, Missouri National Recreational River: Muskrat",
+      "locator": "Scientific Name; Identification; Range and Habitat; Diet; Fun Facts. Supports identity, visible traits, aquatic habitats, mixed diet dominated by plants and effects of vegetation feeding.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usfs_typha_food_edge",
+      "url": "https://research.fs.usda.gov/feis/species-reviews/typlat",
+      "title": "USDA Forest Service, Fire Effects Information System: Typha latifolia, broadleaf cattail",
+      "locator": "Secondary Succession, Grazing/Trampling. Explicitly records common muskrats feeding on broadleaf cattail roots and rhizomes.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_wildlife_gear",
+      "url": "https://www.nps.gov/subjects/watchingwildlife/gear.htm",
+      "title": "National Park Service, Watching Wildlife: Bring This, Not That",
+      "locator": "Opening guidance; Bring this, Binoculars/Spotting Scope and Camera with zoom; Leave this, Food for animals. Supports distant observation, avoiding interference and keeping wildlife food natural.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_field_ethics",
+      "url": "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm",
+      "title": "National Park Service, Leave No Trace Seven Principles",
+      "locator": "Plan Ahead and Prepare; Respect Wildlife. Supports checking local rules, distant observation and leaving animals undisturbed.",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "id": "macrocystis_pyrifera",
+  "name": {
+    "zh": "巨藻",
+    "en": "Giant kelp"
+  },
+  "category": "biological",
+  "description": "Macrocystis pyrifera 是形成海带林的大型褐藻。它在近岸水下岩礁上固着，是依赖光合作用的生产者，也为鱼类与无脊椎动物提供庇护。紫海胆可取食巨藻。",
+  "appearance": {
+    "phase": "solid",
+    "description": "藻体具有藻叶、气囊与底部固着器。气囊帮助藻体朝光照方向伸展，固着器将其附着在海底，藻体可在水面形成冠层。"
+  },
+  "properties": [],
+  "formation": "巨藻向水中释放孢子。其海带林生境通常位于光照能够到达的近岸浅水，适宜生长的海带林通常处于冷凉、营养丰富的海水中。",
+  "storage": "保存原地影像与观测日期、位置和可见结构记录，藻体及固着基底保留在原处。",
+  "applications": [
+    "观察温带近岸海带林生产者",
+    "记录巨藻提供的庇护结构与紫海胆取食关系"
+  ],
+  "acquisition": [
+    {
+      "kind": "observation",
+      "operation": "other",
+      "description": "在允许开展的非采集观察或水下摄影活动中，记录可见的藻叶、气囊、冠层和固着器，作为辨认线索。",
+      "conditions": [
+        "已具备对应地点和观测活动的许可或开放条件",
+        "使用适合既定活动的观测方式，保持藻体、固着器与岩礁原状"
+      ],
+      "inputs": [],
+      "equipment": [
+        "适用于既定观测活动的相机"
+      ],
+      "source_ids": [
+        "nps_giant_kelp",
+        "nps_channel_islands_kelp",
+        "nps_field_ethics"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nps_giant_kelp",
+      "url": "https://www.nps.gov/articles/giant-kelp.htm",
+      "title": "National Park Service: Giant Kelp",
+      "locator": "Scientific Name; Habitat; Additional Information. Supports identity, rocky reef habitat, gas bladders, holdfasts, canopy and shelter functions.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "noaa_kelp_forest",
+      "url": "https://oceanservice.noaa.gov/facts/kelp.html",
+      "title": "NOAA National Ocean Service: What is a kelp forest?",
+      "locator": "Main text paragraphs on cool shallow nearshore waters and cold nutrient-rich water, followed by dependence on light for photosynthesis. Habitat statements describe kelp forests generally.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "noaa_giant_kelp_food_edge",
+      "url": "https://olympiccoast.noaa.gov/living/marinelife/seaweed/",
+      "title": "NOAA Olympic Coast National Marine Sanctuary: Seaweeds",
+      "locator": "Giant Kelp, Macrocystis pyrifera, Phylum, Eaten by and Reproductions. Supports brown algal identity, purple urchin feeding and spore release.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_channel_islands_kelp",
+      "url": "https://www.nps.gov/chis/learn/nature/kelp-forests.htm",
+      "title": "National Park Service, Channel Islands National Park: Kelp Forests",
+      "locator": "Kinds of Kelp; Importance. Identifies Macrocystis pyrifera in Channel Islands kelp forests and describes non-consumptive observation and underwater photography.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_field_ethics",
+      "url": "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm",
+      "title": "National Park Service, Leave No Trace Seven Principles",
+      "locator": "Plan Ahead and Prepare; Leave What You Find. Supports checking site rules and preserving natural objects in place.",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

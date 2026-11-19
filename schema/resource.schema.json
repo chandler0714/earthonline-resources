@@ -206,7 +206,8 @@
               "direct_collection",
               "gathering",
               "digging",
-              "processing"
+              "processing",
+              "observation"
             ]
           },
           "operation": {
@@ -305,6 +306,25 @@
                 }
               }
             }
+          },
+          {
+            "if": {
+              "properties": {
+                "kind": {
+                  "const": "observation"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "operation": {
+                  "const": "other"
+                },
+                "inputs": {
+                  "maxItems": 0
+                }
+              }
+            }
           }
         ]
       }
@@ -391,7 +411,6 @@
     "name",
     "category",
     "description",
-    "composition",
     "appearance",
     "properties",
     "formation",
@@ -405,5 +424,42 @@
   "additionalProperties": false,
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://earthonline.example/schema/resource-v1",
-  "title": "EarthOnline resource contribution"
+  "title": "EarthOnline resource contribution",
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "category": {
+            "enum": [
+              "substance",
+              "mineral"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "composition"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "category": {
+            "const": "mixture"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "composition": {
+            "required": [
+              "components"
+            ]
+          }
+        }
+      }
+    }
+  ]
 }

@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "id": "hematite",
+  "name": {
+    "zh": "赤铁矿",
+    "en": "Hematite"
+  },
+  "category": "mineral",
+  "description": "赤铁矿为氧化铁矿物。化学式指矿物相。含赤铁矿的矿石可以同时含其他矿物，铁品位和可回收量须按矿床另行核实。",
+  "composition": {
+    "formula": "Fe2O3",
+    "source_ids": [
+      "usgs_red_rocks"
+    ]
+  },
+  "appearance": {
+    "phase": "solid",
+    "description": "颜色可呈黑灰、棕或红，外观可有金属光泽或偏土状，条痕常呈红色。"
+  },
+  "properties": [],
+  "formation": "可在富铁地层中出现。明尼苏达州梅萨比铁矿带的历史天然铁矿是富铁建造经风化或蚀变形成含赤铁矿矿石的实例。",
+  "storage": "固体样品按采样地点和地层分别标记存放，保留伴生矿物记录。",
+  "applications": [
+    "矿物与矿石研究标本",
+    "已确认品位及适用性的含赤铁矿矿石可作炼铁原料"
+  ],
+  "acquisition": [
+    {
+      "kind": "digging",
+      "operation": "mine",
+      "description": "从已探明且允许开采的含赤铁矿矿体取得矿石。记录所获为含矿岩石。",
+      "conditions": [
+        "当地矿床经地质查证含赤铁矿",
+        "矿体具备合规且安全的到达和作业条件"
+      ],
+      "inputs": [],
+      "equipment": [],
+      "source_ids": [
+        "mndnr_mesabi_ore",
+        "usgs_mesabi_earthshots"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "usgs_red_rocks",
+      "url": "https://www.usgs.gov/educational-resources/find-feature-red-rocks",
+      "title": "U.S. Geological Survey, Find-A-Feature: Red Rocks",
+      "locator": "Hematite as an iron oxide and its Fe₂O₃ formula",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_grand_canyon_gri",
+      "url": "https://irma.nps.gov/DataStore/FileSource/Get/2279886?filename=GRCA_GRI_Report_2020.pdf",
+      "title": "National Park Service, Grand Canyon National Park Geologic Resources Inventory Report",
+      "locator": "Hematite entry in the mineral table (color, luster and streak)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "mndnr_mesabi_ore",
+      "url": "https://files.dnr.state.mn.us/lands_minerals/mcc_docs/2016_explore_iron_ore.pdf",
+      "title": "Minnesota DNR, Explore Minnesota: Iron Ore (March 2016)",
+      "locator": "Geology and historical natural ore discussion (alteration of the Biwabik Iron Formation)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usgs_mesabi_earthshots",
+      "url": "https://eros.usgs.gov/earthshots/taconite",
+      "title": "U.S. Geological Survey Earthshots, Taconite",
+      "locator": "Opening discussion (historical hematite extraction and distinct taconite industry)",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

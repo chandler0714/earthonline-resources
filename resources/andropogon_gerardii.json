@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "id": "andropogon_gerardii",
+  "name": {
+    "zh": "大须芒草",
+    "en": "Big bluestem"
+  },
+  "category": "biological",
+  "description": "Andropogon gerardii 是北美温带高草草原中的多年生禾草，在一些高草草原中占优势。它与其他草本植物为草原食草动物提供食物，其须根有助于稳定土壤。",
+  "appearance": {
+    "phase": "solid",
+    "description": "高秆禾草。穗枝开展，形似火鸡脚趾。秋季穗头可呈紫红色，茎叶可转为红褐色。"
+  },
+  "properties": [],
+  "formation": "暖季生长，通常在夏季生长较快。北美中西部湿润程度适中的高草草原是常见生境。",
+  "storage": "保留草株和可见穗头的原地观察照片，可记录季节与邻近植被。",
+  "applications": [
+    "识别高草草原生产者",
+    "记录须根稳定草原土壤的生态作用"
+  ],
+  "acquisition": [
+    {
+      "kind": "observation",
+      "operation": "other",
+      "description": "在允许进入的草原沿许可路径拍摄整株和展开的穗头，记录所在草地及季节。",
+      "conditions": [
+        "遵从地点开放规定和园区规则",
+        "植株和穗头留在原处"
+      ],
+      "inputs": [],
+      "equipment": [
+        "相机或手机"
+      ],
+      "source_ids": [
+        "nps_big_bluestem",
+        "nps_field_ethics"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nps_big_bluestem",
+      "url": "https://www.nps.gov/miss/learn/nature/prairestsedgbigbl.htm",
+      "title": "National Park Service, Big Bluestem (Andropogon gerardii)",
+      "locator": "Introduction for tallgrass habitat, food for grazers, roots and autumn colors; Fascinating Facts for spreading seedhead and warm-season growth; Want to Help Us Better Understand the Park? for observation records.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_niobrara_grasses",
+      "url": "https://www.nps.gov/niob/learn/nature/grasses.htm",
+      "title": "National Park Service, Niobrara National Scenic River: Grasses",
+      "locator": "Table 2, Common tallgrass prairie plant and forb species, Big bluestem row. Documents a field occurrence context.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_field_ethics",
+      "url": "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm",
+      "title": "National Park Service, Leave No Trace Seven Principles",
+      "locator": "Plan Ahead and Prepare; Travel and Camp on Durable Surfaces; Leave What You Find.",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

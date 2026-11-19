@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "id": "apostichopus_californicus",
+  "name": {
+    "zh": "加利福尼亚海参",
+    "en": "California sea cucumber"
+  },
+  "category": "biological",
+  "description": "Apostichopus californicus 的旧名包括 Parastichopus californicus。它是海底表栖的沉积物摄食者，摄取有机碎屑和小生物，可记录为碎屑食消费者。其栖境包括近岸岩石、砂及含海藻的底质。这里的碎屑食角色指动物摄食，未将其归为微生物分解者。",
+  "appearance": {
+    "phase": "solid",
+    "description": "体柔软、呈圆筒状，表皮可为红褐色至黄色，背部可见锥形肉质突起，腹面管足较密集。口周具有可缩回的摄食触手。"
+  },
+  "properties": [],
+  "formation": "雌雄个体在海水中进行体外受精，发育过程包含浮游幼体阶段。成体摄食时会翻动并重新分布底部沉积物。",
+  "storage": "保留原地影像、观测日期与底质记录，海参和底部沉积物保持原状。",
+  "applications": [
+    "观察近岸底栖碎屑食动物",
+    "记录沉积物摄食与底质再分布现象"
+  ],
+  "acquisition": [
+    {
+      "kind": "observation",
+      "operation": "other",
+      "description": "在允许开展的原地观察活动中记录圆筒状体形、体色、背部突起和可见管足，作为辨认线索，海参留在原处。",
+      "conditions": [
+        "已具备对应地点和观测活动的许可或开放条件",
+        "采用非接触观察，保持海参及周围底质原状",
+        "辨认时核对相似种，尤其是体表突起的差别"
+      ],
+      "inputs": [],
+      "equipment": [
+        "适用于既定观测活动的相机"
+      ],
+      "source_ids": [
+        "adfg_california_sea_cucumber",
+        "oimb_california_sea_cucumber",
+        "nps_field_ethics"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "adfg_california_sea_cucumber",
+      "url": "https://www.adfg.alaska.gov/index.cfm?adfg=redseacucumber.printerfriendly",
+      "title": "Alaska Department of Fish and Game: Red Sea Cucumber (Apostichopus californicus) Species Profile",
+      "locator": "General Description; Life History, Growth and Reproduction and Feeding Ecology; Range and Habitat; Fast Facts, Reproduction. Supports appearance, development, deposit feeding, bioturbation and varied subtidal substrates.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "oimb_california_sea_cucumber",
+      "url": "https://bpb-us-e1.wpmucdn.com/blogs.uoregon.edu/dist/0/19777/files/2024/08/OSI_A.californicus_2021.pdf",
+      "title": "Hicks, M. 2021. Apostichopus californicus. Oregon Shelf Invertebrates, Oregon Institute of Marine Biology, University of Oregon",
+      "locator": "PDF page 1, Taxonomy, Description, Possible Misidentifications and Ecological Information, Habitat; pages 2–3, Food. Supports synonymy, visible traits, kelp substrates and detritus feeding. No particular kelp species is assigned as the detritus source.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_field_ethics",
+      "url": "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm",
+      "title": "National Park Service, Leave No Trace Seven Principles",
+      "locator": "Plan Ahead and Prepare; Leave What You Find; Respect Wildlife. Supports checking site rules and leaving organisms and natural objects undisturbed.",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}
