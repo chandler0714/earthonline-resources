@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "id": "odocoileus_virginianus",
+  "name": {
+    "zh": "白尾鹿",
+    "en": "White-tailed deer",
+    "fr": "Cerf de Virginie",
+    "es": "Venado cola blanca",
+    "ja": "オジロジカ",
+    "ko": "흰꼬리사슴"
+  },
+  "category": "biological",
+  "description": "Odocoileus virginianus 是鹿科的植食性哺乳动物。北美东部的种群常见于混交林及林缘，食物可包括北美白栎的橡子。北卡罗来纳州 Hollow Rock Nature Park 的调查记录了白尾鹿、北美白栎和云芝栓孔菌在同一地点出现。",
+  "descriptions": {
+    "en": "Odocoileus virginianus is an herbivorous mammal in the deer family. Populations in eastern North America commonly use mixed forests and forest edges, and their diet can include white oak acorns. A survey of Hollow Rock Nature Park in North Carolina recorded white-tailed deer, white oak and turkey tail fungus at the same site.",
+    "fr": "Odocoileus virginianus est un mammifère herbivore de la famille des cervidés. Dans l’est de l’Amérique du Nord, il fréquente les forêts mixtes et leurs lisières, et peut manger les glands du chêne blanc d’Amérique. Un inventaire à Hollow Rock Nature Park, en Caroline du Nord, a signalé la présence du cerf de Virginie, du chêne blanc d’Amérique et de la tramète versicolore sur un même site.",
+    "es": "Odocoileus virginianus es un mamífero herbívoro de la familia de los cérvidos. En el este de América del Norte, sus poblaciones frecuentan los bosques mixtos y sus bordes, y pueden consumir bellotas del roble blanco americano. Un inventario en Hollow Rock Nature Park, Carolina del Norte, registró al venado cola blanca, el roble blanco americano y el hongo cola de pavo en el mismo sitio.",
+    "ja": "Odocoileus virginianus はシカ科の草食哺乳類である。北アメリカ東部では混交林や林縁でよく見られ、ホワイトオークのドングリを食べることがある。ノースカロライナ州のホロー・ロック自然公園（Hollow Rock Nature Park）の調査では、オジロジカ、ホワイトオーク、カワラタケが同じ地点で記録されている。",
+    "ko": "Odocoileus virginianus는 사슴과의 초식 포유류다. 북아메리카 동부에서는 혼합림과 숲 가장자리에서 흔히 볼 수 있으며, 백참나무 도토리를 먹기도 한다. 노스캐롤라이나주의 홀로 록 자연공원(Hollow Rock Nature Park) 조사에서는 흰꼬리사슴, 백참나무, 구름버섯이 같은 지점에서 기록되었다."
+  },
+  "appearance": {
+    "phase": "solid",
+    "description": "成年鹿的尾背为棕色，尾腹面为白色，喉部及腹面也可见白色。夏毛偏黄褐或红褐，冬毛偏灰褐。幼鹿可见白色斑点。"
+  },
+  "properties": [],
+  "formation": "胎生。成年与幼年有不同的可见体貌，毛色随季节变化。",
+  "storage": "保留远距离观察所得的照片与生境记录。",
+  "applications": [
+    "识别温带林地中的植食消费者",
+    "记录白尾鹿与北美白栎橡子的食物关系"
+  ],
+  "acquisition": [
+    {
+      "kind": "observation",
+      "operation": "other",
+      "description": "从允许停留的地点远观活体，记录可见的尾部颜色、体貌和生境。",
+      "conditions": [
+        "遵从地点开放规定并与动物保持距离",
+        "使用远距离观察，无投喂、追逐或接触"
+      ],
+      "inputs": [],
+      "equipment": [
+        "望远镜或相机"
+      ],
+      "source_ids": [
+        "virginia_dwr",
+        "nps_field_ethics"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "virginia_dwr",
+      "url": "https://dwr.virginia.gov/wildlife/information/white-tailed-deer/",
+      "title": "Virginia Department of Wildlife Resources, White-tailed Deer",
+      "locator": "Fact File for taxon; Identifying Characteristics for seasonal coats, tail and fawns; Distribution for mixed forest and forest-edge habitat.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usfs_white_tailed_deer",
+      "url": "https://research.fs.usda.gov/feis/species-reviews/odvi",
+      "title": "USDA Forest Service, Fire Effects Information System: Odocoileus virginianus",
+      "locator": "Food Habits for regional and seasonal variety of plant foods; the species review describes tree browse and acorn mast.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "ncfs_white_oak",
+      "url": "https://www.ncagr.gov/divisions/nc-forest-service/urban/north-carolina-arbor-day/arbor-day-giveaway/white-oak",
+      "title": "North Carolina Forest Service, White Oak",
+      "locator": "Tree Profile, Description, and Wildlife Benefits. Supports taxon, native hardwood and broad crown, and white-tailed deer use of white oak acorns.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "ncparks_site_survey",
+      "url": "https://auth1.dpr.ncparks.gov/ncbp_neho/species_by_site.php",
+      "title": "North Carolina State Parks, New Hope Creek Biodiversity Survey 2021–2022",
+      "locator": "Species by site table, Hollow Rock Nature Park rows for Quercus alba (Hardwood Trees), Odocoileus virginianus (Mammals), and Trametes versicolor (Fungi). Supports individual occurrence records at a common site.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_field_ethics",
+      "url": "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm",
+      "title": "National Park Service, Leave No Trace Seven Principles",
+      "locator": "Plan Ahead and Prepare; Respect Wildlife, including observing from a distance and leaving wildlife unfed.",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

@@ -3,10 +3,21 @@
   "id": "quartz",
   "name": {
     "zh": "石英",
-    "en": "Quartz"
+    "en": "Quartz",
+    "fr": "Quartz",
+    "es": "Cuarzo",
+    "ja": "石英",
+    "ko": "석영"
   },
   "category": "mineral",
   "description": "二氧化硅矿物，形态随产状变化。",
+  "descriptions": {
+    "en": "A silicon dioxide mineral whose form varies with the way it occurs in nature.",
+    "fr": "Minéral de dioxyde de silicium dont la forme varie selon son mode de gisement.",
+    "es": "Mineral de dióxido de silicio cuya forma varía según cómo se presenta en la naturaleza.",
+    "ja": "二酸化ケイ素の鉱物。形態は産状によって変わる。",
+    "ko": "이산화규소 광물로, 산출 상태에 따라 형태가 달라진다."
+  },
   "composition": {
     "formula": "SiO2",
     "source_ids": [

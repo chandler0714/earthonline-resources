@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "id": "lepus_americanus",
+  "name": {
+    "zh": "雪鞋兔",
+    "en": "Snowshoe hare",
+    "fr": "Lièvre d’Amérique",
+    "es": "Liebre americana (Lepus americanus)",
+    "ja": "カンジキウサギ",
+    "ko": "눈덧신토끼"
+  },
+  "category": "biological",
+  "description": "Lepus americanus 是北美北方森林的植食消费者，利用云杉林和灌木茂密的生境。冬季食物可包括小枝、芽和树皮。白云杉枝梢在部分地区可被取食，偏好随生境及可食枝梢而变。",
+  "descriptions": {
+    "en": "Lepus americanus is an herbivorous consumer in the boreal forests of North America. It uses spruce forests and habitats with dense shrubs. Its winter diet can include twigs, buds and bark. It eats white spruce shoots in some areas, with preferences that vary according to habitat and the shoots available.",
+    "fr": "Lepus americanus est un consommateur herbivore de la forêt boréale nord-américaine. Il fréquente les forêts d’épinettes et les milieux à végétation arbustive dense. En hiver, il peut manger des rameaux, des bourgeons et de l’écorce. Dans certaines régions, il consomme des pousses d’épinette blanche. Ses préférences varient selon le milieu et les pousses disponibles.",
+    "es": "Lepus americanus es un consumidor herbívoro del bosque boreal de América del Norte. Habita bosques de píceas y lugares con matorral denso. En invierno puede comer ramitas, yemas y corteza. En algunas regiones consume brotes de pícea blanca. Sus preferencias varían según el hábitat y los brotes disponibles.",
+    "ja": "Lepus americanus は、北アメリカの北方林に生息する草食性の消費者で、トウヒ林や低木が密生する環境を利用する。冬には小枝、芽、樹皮などを食べる。一部の地域ではカナダトウヒの枝先も食べ、その好みは生息環境や利用できる枝先によって異なる。",
+    "ko": "Lepus americanus는 북아메리카 북방림의 초식 소비자로, 가문비나무 숲이나 관목이 빽빽한 곳에 산다. 겨울에는 잔가지, 나무눈, 나무껍질 등을 먹는다. 일부 지역에서는 글라우카가문비나무의 가지 끝을 먹으며, 먹이 선호는 서식 환경과 먹을 수 있는 가지에 따라 달라진다."
+  },
+  "appearance": {
+    "phase": "solid",
+    "description": "后足宽大且覆盖较密的毛，有助于在雪地活动。许多个体夏毛偏棕，冬毛接近白色，换毛期间可呈棕白相间。"
+  },
+  "properties": [],
+  "formation": "胎生。幼兔出生时已有被毛，出生后不久即可活动。",
+  "storage": "保留远距离观察照片，并记录季节、毛色和植被背景。",
+  "applications": [
+    "识别北方森林中随季节换毛的野兔",
+    "记录北方针叶林中的植食关系"
+  ],
+  "acquisition": [
+    {
+      "kind": "observation",
+      "operation": "other",
+      "description": "在开放的林地步道或观景位置远观活体，记录可见的后足、毛色和周围林下植被。",
+      "conditions": [
+        "遵从地点开放规定并与动物保持距离",
+        "从原地观察，让动物自行活动"
+      ],
+      "inputs": [],
+      "equipment": [
+        "望远镜或相机"
+      ],
+      "source_ids": [
+        "nps_snowshoe_hare_ecology",
+        "nps_field_ethics"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nps_snowshoe_hare_ecology",
+      "url": "https://www.nps.gov/articles/snowshoe-hare.htm",
+      "title": "National Park Service, Snowshoe Hare",
+      "locator": "Opening paragraphs for boreal and spruce forest habitats, hind feet and seasonal coat; Snowshoe Hare Ecology → Diet and Reproduction.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_gates_snowshoe_hare",
+      "url": "https://www.nps.gov/gaar/learn/nature/snowshoe-hare.htm",
+      "title": "National Park Service, Gates of the Arctic National Park & Preserve: Snowshoe Hare",
+      "locator": "Opening species notes for Lepus americanus, brush habitat and young born with fur.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usfs_white_spruce_ecology",
+      "url": "https://research.fs.usda.gov/feis/species-reviews/picgla",
+      "title": "USDA Forest Service, Fire Effects Information System: Picea glauca",
+      "locator": "Plant Communities (Western Canada and Eastern Canada) for boreal forests. Importance to Wildlife and Livestock, Palatability and Nutritional Value for variable snowshoe hare consumption, including Kluane twig trials and browsing on buds and new growth.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "chengdu_museum_snowshoe_hare",
+      "url": "https://nature.cdmuseum.com/slzl/202005/125.html",
+      "title": "成都博物馆，自然藏品白靴兔",
+      "locator": "物种标题、学名和别名雪鞋兔。",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_field_ethics",
+      "url": "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm",
+      "title": "National Park Service, Leave No Trace Seven Principles",
+      "locator": "Plan Ahead and Prepare; Respect Wildlife, including observing wildlife from a distance.",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "id": "hematite",
+  "name": {
+    "zh": "赤铁矿",
+    "en": "Hematite",
+    "fr": "Hématite",
+    "es": "Hematita",
+    "ja": "赤鉄鉱",
+    "ko": "적철석"
+  },
+  "category": "mineral",
+  "description": "赤铁矿为氧化铁矿物。化学式指矿物相。含赤铁矿的矿石可以同时含其他矿物，铁品位和可回收量须按矿床另行核实。",
+  "descriptions": {
+    "en": "Hematite is an iron oxide mineral. The chemical formula refers to the mineral phase. Hematite-bearing ore may also contain other minerals. Iron grade and the recoverable amount must be verified for each deposit.",
+    "fr": "L’hématite est un minéral d’oxyde de fer. La formule chimique désigne la phase minérale. Un minerai contenant de l’hématite peut aussi renfermer d’autres minéraux. La teneur en fer et la quantité récupérable doivent être vérifiées pour chaque gisement.",
+    "es": "La hematita es un mineral de óxido de hierro. La fórmula química se refiere a la fase mineral. La mena que contiene hematita también puede contener otros minerales. La ley de hierro y la cantidad recuperable deben verificarse para cada yacimiento.",
+    "ja": "赤鉄鉱は酸化鉄の鉱物。化学式は鉱物相を表す。赤鉄鉱を含む鉱石には、別の鉱物が共存することがある。鉄の品位と回収可能量は鉱床ごとに確認する必要がある。",
+    "ko": "적철석은 산화철 광물이다. 화학식은 광물상을 나타낸다. 적철석을 함유한 광석에는 다른 광물도 섞여 있을 수 있다. 철 품위와 회수 가능량은 광상별로 확인해야 한다."
+  },
+  "composition": {
+    "formula": "Fe2O3",
+    "source_ids": [
+      "usgs_red_rocks"
+    ]
+  },
+  "appearance": {
+    "phase": "solid",
+    "description": "颜色可呈黑灰、棕或红，外观可有金属光泽或偏土状，条痕常呈红色。"
+  },
+  "properties": [],
+  "formation": "可在富铁地层中出现。明尼苏达州梅萨比铁矿带的历史天然铁矿是富铁建造经风化或蚀变形成含赤铁矿矿石的实例。",
+  "storage": "固体样品按采样地点和地层分别标记存放，保留伴生矿物记录。",
+  "applications": [
+    "矿物与矿石研究标本",
+    "已确认品位及适用性的含赤铁矿矿石可作炼铁原料"
+  ],
+  "acquisition": [
+    {
+      "kind": "digging",
+      "operation": "mine",
+      "description": "从已探明且允许开采的含赤铁矿矿体取得矿石。记录所获为含矿岩石。",
+      "conditions": [
+        "当地矿床经地质查证含赤铁矿",
+        "矿体具备合规且安全的到达和作业条件"
+      ],
+      "inputs": [],
+      "equipment": [],
+      "source_ids": [
+        "mndnr_mesabi_ore",
+        "usgs_mesabi_earthshots"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "usgs_red_rocks",
+      "url": "https://www.usgs.gov/educational-resources/find-feature-red-rocks",
+      "title": "U.S. Geological Survey, Find-A-Feature: Red Rocks",
+      "locator": "Hematite as an iron oxide and its Fe₂O₃ formula",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_grand_canyon_gri",
+      "url": "https://irma.nps.gov/DataStore/FileSource/Get/2279886?filename=GRCA_GRI_Report_2020.pdf",
+      "title": "National Park Service, Grand Canyon National Park Geologic Resources Inventory Report",
+      "locator": "Hematite entry in the mineral table (color, luster and streak)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "mndnr_mesabi_ore",
+      "url": "https://files.dnr.state.mn.us/lands_minerals/mcc_docs/2016_explore_iron_ore.pdf",
+      "title": "Minnesota DNR, Explore Minnesota: Iron Ore (March 2016)",
+      "locator": "Geology and historical natural ore discussion (alteration of the Biwabik Iron Formation)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usgs_mesabi_earthshots",
+      "url": "https://eros.usgs.gov/earthshots/taconite",
+      "title": "U.S. Geological Survey Earthshots, Taconite",
+      "locator": "Opening discussion (historical hematite extraction and distinct taconite industry)",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "id": "basalt",
+  "name": {
+    "zh": "玄武岩",
+    "en": "Basalt",
+    "fr": "Basalte",
+    "es": "Basalto",
+    "ja": "玄武岩",
+    "ko": "현무암"
+  },
+  "category": "mixture",
+  "description": "本条目指喷出形成的镁铁质玄武岩，常见组成矿物有斜长石、辉石和橄榄石。不同熔岩流和样本的矿物比例、孔隙及风化状况可不同。",
+  "descriptions": {
+    "en": "This entry describes mafic basalt formed by volcanic eruption. Common constituent minerals include plagioclase, pyroxene, and olivine. Mineral proportions, porosity, and the degree of weathering can vary among lava flows and samples.",
+    "fr": "Cette fiche décrit un basalte mafique formé lors d’une éruption volcanique. Le plagioclase, le pyroxène et l’olivine figurent parmi ses minéraux courants. Les proportions minérales, la porosité et le degré d’altération peuvent varier selon les coulées de lave et les échantillons.",
+    "es": "Esta ficha describe el basalto máfico formado por erupciones volcánicas. Entre sus minerales habituales se encuentran la plagioclasa, el piroxeno y el olivino. Las proporciones minerales, la porosidad y el grado de meteorización pueden variar entre coladas de lava y muestras.",
+    "ja": "火山噴出で形成された苦鉄質の玄武岩。主な構成鉱物には斜長石、輝石、かんらん石がある。鉱物の割合、空隙率、風化の程度は、溶岩流や試料によって異なることがある。",
+    "ko": "화산 분출로 형성된 고철질 현무암을 가리킨다. 흔한 구성 광물로는 사장석, 휘석, 감람석이 있다. 광물의 비율, 공극률, 풍화 정도는 용암류와 시료에 따라 다를 수 있다."
+  },
+  "appearance": {
+    "phase": "solid",
+    "description": "通常呈灰黑到黑色，常见细粒结构。有些样本可见气孔或较大的早期结晶矿物。"
+  },
+  "properties": [],
+  "formation": "玄武质岩浆到达地表或近地表后，熔岩冷却并固结可形成玄武岩。固结的熔岩流在适当条件下可保存为露头。",
+  "storage": "固体标本分开存放，标记采集地点和所属露头。",
+  "applications": [
+    "火山岩地质标本",
+    "满足工程性能要求的玄武岩可作为碎石骨料的原岩"
+  ],
+  "acquisition": [
+    {
+      "kind": "gathering",
+      "operation": "gather",
+      "description": "在允许采样的已固结玄武岩露头或附近收集有产地记录的岩石标本。",
+      "conditions": [
+        "有已确认的玄武岩露头及可接近的样本",
+        "现场允许采样"
+      ],
+      "inputs": [],
+      "equipment": [],
+      "source_ids": [
+        "nps_lava_flows",
+        "usgs_collecting_rocks"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nps_igneous_rocks",
+      "url": "https://www.nps.gov/subjects/geology/igneous.htm",
+      "title": "National Park Service, Igneous Rocks",
+      "locator": "Extrusive (Volcanic) Rock Classification and Basalt",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usgs_igneous_rocks",
+      "url": "https://www.usgs.gov/faqs/what-are-igneous-rocks",
+      "title": "U.S. Geological Survey, What are igneous rocks?",
+      "locator": "Extrusive Igneous Rocks (rapid cooling, fine texture and vesicles)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_lava_flows",
+      "url": "https://www.nps.gov/subjects/volcanoes/lava-flows.htm",
+      "title": "National Park Service, Lava Flows",
+      "locator": "Definition and Lava Flows in National Parks (Columbia River Basalt exposures)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usgs_collecting_rocks",
+      "url": "https://pubs.usgs.gov/gip/collect1/collectgip.html",
+      "title": "U.S. Geological Survey, Collecting Rocks",
+      "locator": "Where to Find Rocks, representative exposures and sample records",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usgs_payette_aggregate",
+      "url": "https://pubs.usgs.gov/of/1998/0219a/pdf/of98-219a.pdf",
+      "title": "USGS Open-File Report 98-219-A: Potential Mineral Resources, Payette National Forest, Idaho",
+      "locator": "Crushed-rock aggregate discussion (Columbia River Basalt and mapped favorable tracts)",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

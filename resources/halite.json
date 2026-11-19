@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "id": "halite",
+  "name": {
+    "zh": "石盐矿物",
+    "en": "Halite",
+    "fr": "Halite",
+    "es": "Halita",
+    "ja": "岩塩",
+    "ko": "암염"
+  },
+  "category": "mineral",
+  "description": "石盐是氯化钠矿物。岩盐和盐壳可夹有黏土、伴生矿物或卤水。整块样品的成分和食用适用性需分别核实。",
+  "descriptions": {
+    "en": "Halite is a sodium chloride mineral. Rock salt and salt crusts may contain clay, associated minerals, or brine. The composition of the whole sample and its suitability for consumption must be verified separately.",
+    "fr": "La halite est un minéral de chlorure de sodium. Le sel gemme et les croûtes salines peuvent contenir de l’argile, des minéraux associés ou de la saumure. La composition de l’échantillon entier et son aptitude à la consommation doivent être vérifiées séparément.",
+    "es": "La halita es un mineral de cloruro de sodio. La sal gema y las costras salinas pueden contener arcilla, minerales asociados o salmuera. La composición de la muestra completa y su aptitud para el consumo deben verificarse por separado.",
+    "ja": "岩塩は塩化ナトリウムの鉱物。岩塩の塊や塩殻には、粘土、共存鉱物、濃い塩水が含まれることがある。試料全体の組成と食用への適合性は、それぞれ確認する必要がある。",
+    "ko": "암염은 염화나트륨 광물이다. 암염 덩어리와 염류가 굳은 표층에는 점토, 수반 광물 또는 염수가 섞여 있을 수 있다. 시료 전체의 조성과 식용 적합성은 각각 확인해야 한다."
+  },
+  "composition": {
+    "formula": "NaCl",
+    "source_ids": [
+      "ugs_great_salt_lake"
+    ]
+  },
+  "appearance": {
+    "phase": "solid",
+    "description": "可呈白色、无色或半透明的立方晶体、阶梯状立方晶体及结晶盐壳。夹杂物可使样本带颜色。"
+  },
+  "properties": [],
+  "formation": "含钠和氯的盐水在蒸发浓缩到可以结晶时可析出石盐。干旱盆地的盐滩可形成盐壳，盐壳也可随来水和蒸发反复溶解与结晶。",
+  "storage": "分别标记并干燥存放固体样品，避免接触会溶解盐壳的水。",
+  "applications": [
+    "蒸发岩和盐壳地质标本",
+    "满足用途要求的岩盐可作工业盐原料"
+  ],
+  "acquisition": [
+    {
+      "kind": "direct_collection",
+      "operation": "collect",
+      "description": "在可接近且允许取样的露出盐壳处记录并取少量已辨识的矿物样本。",
+      "conditions": [
+        "现场存在可辨识的石盐晶体或盐壳",
+        "仅作矿物样本"
+      ],
+      "inputs": [],
+      "equipment": [],
+      "source_ids": [
+        "ugs_great_salt_lake",
+        "usgs_bonneville_hydrology"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ugs_great_salt_lake",
+      "url": "https://ugspub.nr.utah.gov/publications/public_information/pi-104.pdf",
+      "title": "Utah Geological Survey, Commonly Asked Questions About Utah’s Great Salt Lake and Lake Bonneville",
+      "locator": "What are those crystals in the lake? (printed page 14, halite formula and exposed salt-crust specimen)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usgs_bonneville_hydrology",
+      "url": "https://pubs.usgs.gov/wsp/2057/report.pdf",
+      "title": "USGS Water-Supply Paper 2057, Hydrology and Surface Morphology of the Bonneville Salt Flats and Pilot Valley Playa, Utah",
+      "locator": "Abstract (Great Salt Lake Desert, chloride zone and salt-crust dissolution/recrystallization)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usgs_salt_uses",
+      "url": "https://www.usgs.gov/centers/national-minerals-information-center/salt-statistics-and-information",
+      "title": "USGS National Minerals Information Center, Salt Statistics and Information",
+      "locator": "Salt Insights and Data (industrial salt uses)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usgs_evaporite_core",
+      "url": "https://pubs.usgs.gov/bul/1252b/report.pdf",
+      "title": "USGS Bulletin 1252-B",
+      "locator": "Lithology, pages B12–B14, halite and argillaceous halite",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

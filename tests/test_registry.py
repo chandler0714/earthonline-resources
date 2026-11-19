@@ -28,6 +28,41 @@ class RegistryTests(unittest.TestCase):
         d['composition'] = {'components': [{'name': '水', 'fraction_min': 0.9, 'fraction_max': 1.0}], 'source_ids': ['nist']}
         self.assertEqual(validate_resource(d), [])
 
+    def test_unknown_composition_and_observation(self):
+        d = sample()
+        del d['composition']
+        observe = d['acquisition'][0]
+        observe.update(kind='observation', operation='other', inputs=[], equipment=[])
+        for category in ('biological', 'mixture'):
+            d['category'] = category
+            self.assertEqual(validate_resource(d), [])
+        for category in ('substance', 'mineral'):
+            d['category'] = category
+            self.assertTrue(validate_resource(d))
+        d['category'] = 'biological'
+        observe['operation'] = 'collect'
+        self.assertTrue(validate_resource(d))
+        observe['operation'] = 'other'
+        observe['inputs'] = [{'resource_id': 'water', 'description': 'wrong input'}]
+        self.assertTrue(validate_resource(d))
+
+    def test_mobile_v1_text_preflight_is_stricter_than_contributor_checks(self):
+        import json, tempfile
+        from pathlib import Path
+        d = sample()
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / 'water.json'
+            path.write_text(json.dumps(d))
+            self.assertEqual(validate_directory(folder), [])
+            self.assertTrue(validate_directory(folder, mobile_v1=True))
+            d['name'].update(fr='Eau', es='Agua', ja='水', ko='물')
+            d['descriptions'] = {'en': 'Liquid water', 'fr': 'Eau liquide', 'es': 'Agua líquida', 'ja': '液体の水', 'ko': '액체 상태의 물'}
+            path.write_text(json.dumps(d))
+            self.assertEqual(validate_directory(folder, mobile_v1=True), [])
+            d['descriptions']['es'] = '\u3000\u200b'
+            path.write_text(json.dumps(d))
+            self.assertTrue(validate_directory(folder, mobile_v1=True))
+
     def test_acquisition_is_required(self):
         d = sample(); del d['acquisition']
         self.assertTrue(validate_resource(d))
@@ -83,6 +118,20 @@ class RegistryTests(unittest.TestCase):
             errors = validate_catalog(root)
             self.assertTrue(any('Unknown or missing ecosystem' in error for error in errors))
             self.assertTrue(any('Unindexed resource' in error for error in errors))
+
+    def test_catalog_rejects_roles_for_nonliving_resources(self):
+        import json, shutil, tempfile
+        from pathlib import Path
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            shutil.copytree(ROOT / 'catalog', root / 'catalog')
+            shutil.copytree(ROOT / 'resources', root / 'resources')
+            path = root / 'catalog/resource-index.json'
+            index = json.loads(path.read_text())
+            water = next(item for item in index['resources'] if item['id'] == 'seawater')
+            water['ecological_roles'] = ['producer']
+            path.write_text(json.dumps(index))
+            self.assertIn('Invalid ecological roles for: seawater', validate_catalog(root))
 
     def test_catalog_rejects_duplicate_id_and_path_escape(self):
         import json, shutil, tempfile

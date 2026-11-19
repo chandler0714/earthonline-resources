@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "id": "air",
+  "name": {
+    "zh": "近地表空气",
+    "en": "Near-surface air",
+    "fr": "Air près de la surface",
+    "es": "Aire cercano a la superficie",
+    "ja": "地表付近の空気",
+    "ko": "지표 부근의 공기"
+  },
+  "category": "mixture",
+  "description": "地球近地表空气的参考样本。所列氮和氧质量分数取自海平面、约 300 K 的参考表；氩、水汽及其他成分未在此列全，组成会随地点、高度和天气变化，不能作为每颗星球的固定大气配方。",
+  "descriptions": {
+    "en": "A reference sample of air near Earth's surface. The listed mass fractions of nitrogen and oxygen come from a reference table for sea level at about 300 K. Argon, water vapor, and other constituents are not fully listed here. Composition varies with location, altitude, and weather, so these values cannot serve as a fixed atmospheric composition for every planet.",
+    "fr": "Échantillon de référence de l’air près de la surface terrestre. Les fractions massiques d’azote et d’oxygène indiquées proviennent d’une table de référence au niveau de la mer, à environ 300 K. L’argon, la vapeur d’eau et les autres constituants ne sont pas tous détaillés ici. La composition varie selon le lieu, l’altitude et la météo, et ne constitue donc pas une composition atmosphérique fixe pour toutes les planètes.",
+    "es": "Muestra de referencia del aire cercano a la superficie terrestre. Las fracciones másicas de nitrógeno y oxígeno indicadas proceden de una tabla de referencia al nivel del mar, a unos 300 K. El argón, el vapor de agua y otros componentes no se enumeran aquí de forma exhaustiva. La composición varía con el lugar, la altitud y el tiempo meteorológico, por lo que estos valores no pueden usarse como composición atmosférica fija de todos los planetas.",
+    "ja": "地球の地表付近の空気の参照試料。窒素と酸素の質量分率は、海面の高さで約300 Kにおける参照表の値を用いている。アルゴン、水蒸気などの成分はここでは網羅していない。組成は場所、高度、天候によって変わるため、すべての惑星に共通する固定の大気組成にはできない。",
+    "ko": "지구 지표 부근 공기의 참고 시료다. 표시된 질소와 산소의 질량 분율은 해수면 높이에서 약 300 K일 때의 참고 표에서 가져왔다. 아르곤, 수증기 및 그 밖의 성분은 여기에 모두 열거하지 않았다. 조성은 위치, 고도, 날씨에 따라 달라지므로 모든 행성에 적용되는 고정 대기 조성으로 사용할 수 없다."
+  },
+  "composition": {
+    "components": [
+      {
+        "name": "分子氮 N2",
+        "fraction_min": 0.765,
+        "fraction_max": 0.765
+      },
+      {
+        "name": "分子氧 O2",
+        "fraction_min": 0.2197,
+        "fraction_max": 0.2197
+      }
+    ],
+    "source_ids": [
+      "jpl_atmosphere"
+    ]
+  },
+  "appearance": {
+    "phase": "gas",
+    "description": "通常不可直接从外观分辨其气体组分；样本性质取决于当地温度、压力和悬浮物。"
+  },
+  "properties": [],
+  "formation": "行星大气的组成由具体星球历史决定；本条只记录地球近地表空气样本，不推断其他星球的大气形成链。",
+  "storage": "采样后使用适当的密闭容器保存，并记录采样地点与条件。",
+  "applications": [
+    "大气组成观测样本"
+  ],
+  "acquisition": [
+    {
+      "kind": "direct_collection",
+      "operation": "collect",
+      "description": "从可接触的大气中采集空气样本。",
+      "conditions": [
+        "所在位置有可采样的大气",
+        "记录采样位置及环境条件"
+      ],
+      "inputs": [],
+      "equipment": [
+        "气体采样容器"
+      ],
+      "source_ids": [
+        "jpl_atmosphere"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "jpl_atmosphere",
+      "url": "https://descanso.jpl.nasa.gov/monograph/series7/Descanso%207_chap03.pdf",
+      "title": "JPL Deep Space Optical Communications, Chapter 3: The Atmospheric Channel",
+      "locator": "Section 3.2.2, Tables 3-2 and 3-3, pp. 142-143",
+      "accessed": "2026-11-08"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}
