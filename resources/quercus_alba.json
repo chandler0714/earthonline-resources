@@ -7,16 +7,16 @@
     "fr": "Chêne blanc d’Amérique",
     "es": "Roble blanco americano (Quercus alba)",
     "ja": "ホワイトオーク (Quercus alba)",
-    "ko": "백참나무 (Quercus alba)"
+    "ko": "화이트오크 (Quercus alba)"
   },
   "category": "biological",
-  "description": "Quercus alba 是北美东部原生的壳斗科落叶乔木，是温带林地的生产者。橡子是包括白尾鹿在内的野生动物食物。北卡罗来纳州 Hollow Rock Nature Park 的调查记录了北美白栎、白尾鹿和云芝栓孔菌在同一地点出现。",
+  "description": "北美白栎（Quercus alba）是北美东部原生的壳斗科落叶乔木。它生长于温带林地，叶片具圆裂片。橡子是多种野生动物的食物。",
   "descriptions": {
-    "en": "Quercus alba is a deciduous tree in the beech family, native to eastern North America and a producer in temperate forests. Its acorns are food for wildlife, including white-tailed deer. A survey of Hollow Rock Nature Park in North Carolina recorded white oak, white-tailed deer and turkey tail fungus at the same site.",
-    "fr": "Quercus alba est un arbre caduc de la famille des Fagacées, originaire de l’est de l’Amérique du Nord. C’est un producteur des forêts tempérées. Ses glands nourrissent des animaux sauvages, dont le cerf de Virginie. Un inventaire à Hollow Rock Nature Park, en Caroline du Nord, a signalé la présence du chêne blanc d’Amérique, du cerf de Virginie et de la tramète versicolore sur un même site.",
-    "es": "Quercus alba es un árbol caducifolio de la familia de las fagáceas, originario del este de América del Norte. Es un productor de los bosques templados. Sus bellotas sirven de alimento a animales silvestres como el venado cola blanca. Un inventario en Hollow Rock Nature Park, Carolina del Norte, registró al roble blanco americano, el venado cola blanca y el hongo cola de pavo en el mismo sitio.",
-    "ja": "Quercus alba は北アメリカ東部に自生するブナ科の落葉高木で、温帯林の生産者である。ドングリはオジロジカなどの野生動物の餌になる。ノースカロライナ州のホロー・ロック自然公園（Hollow Rock Nature Park）の調査では、ホワイトオーク、オジロジカ、カワラタケが同じ地点で記録されている。",
-    "ko": "Quercus alba는 북아메리카 동부에 자생하는 참나무과의 낙엽 교목으로, 온대림의 생산자다. 도토리는 흰꼬리사슴을 비롯한 야생동물의 먹이가 된다. 노스캐롤라이나주의 홀로 록 자연공원(Hollow Rock Nature Park) 조사에서는 백참나무, 흰꼬리사슴, 구름버섯이 같은 지점에서 기록되었다."
+    "en": "White oak (Quercus alba) is a deciduous tree in the beech family, native to eastern North America. It grows in temperate forests and has rounded leaf lobes. Its acorns feed many kinds of wildlife.",
+    "fr": "Le chêne blanc d’Amérique (Quercus alba) est un arbre caduc de la famille des fagacées, originaire de l’est de l’Amérique du Nord. Il pousse dans les forêts tempérées et ses feuilles présentent des lobes arrondis. Ses glands nourrissent de nombreux animaux sauvages.",
+    "es": "El roble blanco americano (Quercus alba) es un árbol caducifolio de la familia de las fagáceas, originario del este de Norteamérica. Crece en bosques templados y sus hojas tienen lóbulos redondeados. Sus bellotas alimentan a numerosos animales silvestres.",
+    "ja": "ホワイトオーク（Quercus alba）は、北アメリカ東部に自生するブナ科の落葉高木。温帯林に生育し、葉の裂片は丸みを帯びる。ドングリはさまざまな野生動物の餌になる。",
+    "ko": "화이트오크(Quercus alba)는 북아메리카 동부에 자생하는 참나무과의 낙엽 교목이다. 온대림에서 자라며 잎의 갈래 끝이 둥글다. 도토리는 여러 야생동물의 먹이가 된다."
   },
   "appearance": {
     "phase": "solid",
@@ -83,6 +83,13 @@
       "title": "National Park Service, Leave No Trace Seven Principles",
       "locator": "Plan Ahead and Prepare; Travel and Camp on Durable Surfaces; Leave What You Find.",
       "accessed": "2026-11-20"
+    },
+    {
+      "id": "ut_white_oak",
+      "url": "https://taes.tennessee.edu/recs/forestry/plants-whiteoak.htm",
+      "title": "University of Tennessee Forest Resources Center and Arboretum, White Oak",
+      "locator": "Leaf morphology, range and periodic acorn production",
+      "accessed": "2026-11-25"
     }
   ],
   "review": {

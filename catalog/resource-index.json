@@ -309,6 +309,19 @@
       ]
     },
     {
+      "id": "vaccinium_angustifolium",
+      "path": "resources/vaccinium_angustifolium.json",
+      "domains": [
+        "biosphere"
+      ],
+      "ecosystems": [
+        "temperate_forest"
+      ],
+      "ecological_roles": [
+        "producer"
+      ]
+    },
+    {
       "id": "water",
       "path": "resources/water.json",
       "domains": [
