@@ -7,7 +7,7 @@
     "fr": "Merle d’Amérique (Turdus migratorius)",
     "es": "Zorzal robín (Turdus migratorius)",
     "ja": "コマツグミ（Turdus migratorius）",
-    "ko": "아메리카울새(Turdus migratorius)"
+    "ko": "아메리카지빠귀(Turdus migratorius)"
   },
   "category": "biological",
   "description": "旅鸫是北美的一种鸟，见于林缘和开阔地。文献记录其取食矮丛蓝莓（Vaccinium angustifolium）的果实。",
@@ -16,7 +16,7 @@
     "fr": "Le Merle d’Amérique est un oiseau nord-américain présent en lisière de forêt et dans les clairières. Sa consommation de fruits du bleuet à feuilles étroites (Vaccinium angustifolium) est documentée.",
     "es": "El zorzal robín es un ave norteamericana presente en los bordes de los bosques y en claros. Está documentado que consume frutos del arándano bajo (Vaccinium angustifolium).",
     "ja": "コマツグミは北米の鳥で、林縁や開けた場所に生息する。ローブッシュブルーベリー（Vaccinium angustifolium）の果実を食べることが文献に記録されている。",
-    "ko": "아메리카울새는 북아메리카의 숲 가장자리와 탁 트인 곳에 사는 새다. 로우부시 블루베리(Vaccinium angustifolium)의 열매를 먹는다는 문헌 기록이 있다."
+    "ko": "아메리카지빠귀는 북아메리카의 숲 가장자리와 탁 트인 곳에 사는 새다. 로우부시 블루베리(Vaccinium angustifolium)의 열매를 먹는다는 문헌 기록이 있다."
   },
   "appearance": {
     "phase": "solid",
@@ -66,6 +66,13 @@
       "title": "Maryland Department of Natural Resources. Maryland’s Wild Acres: Creating a Wild Backyard — American Robin.",
       "locator": "Natural History; How to Attract Robins. Supports open foraging ground near trees and shrubs, mixed diet and an explicit blueberry-food record. The generic blueberry wording supplements the species-specific FEIS record.",
       "accessed": "2026-11-22"
+    },
+    {
+      "id": "nibr_robin_korean_name",
+      "url": "https://www.nibr.go.kr/aiibook/access/ecatalogt.jsp?Dir=988&callmode=normal&catimage=&eclang=ko&start=165&um=s",
+      "title": "National Institute of Biological Resources (Korea), Study on Korean names for major managed species and the national species list",
+      "locator": "Page 157 (catalog page 165), entry 68, Turdus migratorius. The review proposes 아메리카지빠귀 as the Korean name and documents earlier variants.",
+      "accessed": "2026-11-26"
     }
   ],
   "review": {

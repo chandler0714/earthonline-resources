@@ -10,13 +10,13 @@
     "ko": "글라우카가문비나무"
   },
   "category": "biological",
-  "description": "Picea glauca 是北美北部原生的松科常绿乔木，是北方针叶林的生产者，在阿拉斯加和加拿大部分林地可形成优势树冠。雪鞋兔有取食白云杉枝梢的记录，取食偏好因地区和树木生长阶段而异。",
+  "description": "Picea glauca 是北美北部原生的松科常绿乔木，是北方针叶林的生产者，在阿拉斯加和加拿大部分林地可形成优势树冠。有记录显示，雪鞋兔会取食白云杉幼苗和幼树的芽及新梢。",
   "descriptions": {
-    "en": "Picea glauca is an evergreen tree in the pine family, native to northern North America. It is a producer in boreal conifer forests and can dominate the canopy of some stands in Alaska and Canada. Snowshoe hares have been recorded eating white spruce shoots, with preferences that vary by region and by the tree’s stage of growth.",
-    "fr": "Picea glauca est un arbre à feuillage persistant de la famille des Pinacées, originaire du nord de l’Amérique du Nord. C’est un producteur des forêts boréales de conifères, où il peut dominer la canopée de certains peuplements en Alaska et au Canada. La consommation de ses pousses par le lièvre d’Amérique a été documentée. La préférence varie selon la région et le stade de développement de l’arbre.",
-    "es": "Picea glauca es un árbol perennifolio de la familia de las pináceas, originario del norte de América del Norte. Es un productor de los bosques boreales de coníferas y puede dominar el dosel de algunos rodales de Alaska y Canadá. Se ha registrado que la liebre americana come sus brotes. La preferencia varía según la región y la etapa de crecimiento del árbol.",
-    "ja": "Picea glauca は、北アメリカ北部に自生するマツ科の常緑高木である。北方針葉樹林の生産者で、アラスカやカナダの一部の林分では林冠を占める主要樹種となる。カンジキウサギが枝先を食べた記録があり、好みは地域や木の成長段階によって異なる。",
-    "ko": "Picea glauca는 북아메리카 북부에 자생하는 소나무과의 상록 교목이다. 북방 침엽수림의 생산자로, 알래스카와 캐나다의 일부 숲에서는 숲의 상층을 이루는 우점종이 될 수 있다. 눈덧신토끼가 가지 끝을 먹는 것으로 기록되었으며, 선호는 지역과 나무의 생장 단계에 따라 다르다."
+    "en": "Picea glauca is an evergreen tree in the pine family, native to northern North America. It is a producer in boreal conifer forests and can dominate the canopy of some stands in Alaska and Canada. Snowshoe hares have been recorded eating the buds and new shoots of seedlings and young trees.",
+    "fr": "Picea glauca est un arbre à feuillage persistant de la famille des Pinacées, originaire du nord de l’Amérique du Nord. C’est un producteur des forêts boréales de conifères, où il peut dominer la canopée de certains peuplements en Alaska et au Canada. Le lièvre d’Amérique se nourrit notamment des bourgeons et des jeunes pousses des semis et des jeunes arbres.",
+    "es": "Picea glauca es un árbol perennifolio de la familia de las pináceas, originario del norte de América del Norte. Es un productor de los bosques boreales de coníferas y puede dominar el dosel de algunos rodales de Alaska y Canadá. Se ha observado que la liebre americana come las yemas y los brotes nuevos de las plántulas y los árboles jóvenes.",
+    "ja": "Picea glauca は、北アメリカ北部に自生するマツ科の常緑高木である。北方針葉樹林の生産者で、アラスカやカナダの一部の林分では林冠を占める主要樹種となる。カンジキウサギが実生や若木の芽と新梢を食べた記録がある。",
+    "ko": "Picea glauca는 북아메리카 북부에 자생하는 소나무과의 상록 교목이다. 북방 침엽수림의 생산자로, 알래스카와 캐나다의 일부 숲에서는 숲의 상층을 이루는 우점종이 될 수 있다. 눈덧신토끼가 묘목과 어린나무의 싹과 새 가지를 먹는 것으로 기록되었다."
   },
   "appearance": {
     "phase": "solid",
