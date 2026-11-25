@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "id": "turdus_migratorius",
+  "name": {
+    "zh": "旅鸫（Turdus migratorius）",
+    "en": "American robin (Turdus migratorius)",
+    "fr": "Merle d’Amérique (Turdus migratorius)",
+    "es": "Zorzal robín (Turdus migratorius)",
+    "ja": "コマツグミ（Turdus migratorius）",
+    "ko": "아메리카지빠귀(Turdus migratorius)"
+  },
+  "category": "biological",
+  "description": "旅鸫是北美的一种鸟，见于林缘和开阔地。文献记录其取食矮丛蓝莓（Vaccinium angustifolium）的果实。",
+  "descriptions": {
+    "en": "The American robin is a North American bird found along forest edges and in open clearings. Its consumption of lowbush blueberry (Vaccinium angustifolium) fruit is documented.",
+    "fr": "Le Merle d’Amérique est un oiseau nord-américain présent en lisière de forêt et dans les clairières. Sa consommation de fruits du bleuet à feuilles étroites (Vaccinium angustifolium) est documentée.",
+    "es": "El zorzal robín es un ave norteamericana presente en los bordes de los bosques y en claros. Está documentado que consume frutos del arándano bajo (Vaccinium angustifolium).",
+    "ja": "コマツグミは北米の鳥で、林縁や開けた場所に生息する。ローブッシュブルーベリー（Vaccinium angustifolium）の果実を食べることが文献に記録されている。",
+    "ko": "아메리카지빠귀는 북아메리카의 숲 가장자리와 탁 트인 곳에 사는 새다. 로우부시 블루베리(Vaccinium angustifolium)의 열매를 먹는다는 문헌 기록이 있다."
+  },
+  "appearance": {
+    "phase": "solid",
+    "description": "成鸟通常具有灰色背部、深灰至黑色头部和红褐色腹部，尾下带白色。物种身份须结合完整识别资料核验。"
+  },
+  "properties": [],
+  "formation": "见于北美林缘、林间空地，以及有树木和灌丛的开阔觅食地。其食物包括蚯蚓、昆虫和多种果实，取食组成随季节及当地条件变化。",
+  "storage": "本条目用于原地观察记录；保存日期、地点与识别依据。",
+  "applications": [
+    "记录本物种与矮丛蓝莓果实之间已有文献支持的取食关系。"
+  ],
+  "acquisition": [
+    {
+      "kind": "observation",
+      "operation": "other",
+      "description": "在允许观察的地点，保持距离记录经可靠识别的旅鸫及可见行为。",
+      "conditions": [
+        "物种身份已经核验。",
+        "遵守所在地的进入、观察与野生动物保护规定。"
+      ],
+      "inputs": [],
+      "equipment": [],
+      "source_ids": [
+        "robin_habitat",
+        "maryland_robin"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "robin_blueberry",
+      "url": "https://research.fs.usda.gov/feis/species-reviews/vacang",
+      "title": "Tirmenstein, D. A. 1991. Vaccinium angustifolium, lowbush blueberry. USDA Forest Service, Fire Effects Information System. DOI: 10.2737/feis-species-review-vacang",
+      "locator": "Importance to Wildlife and Livestock → Fruit and flowers. Explicitly names American robin among birds consuming Vaccinium angustifolium fruit; the following Vaccinium spp. list is broader and is not substituted for this claim.",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": "robin_habitat",
+      "url": "https://nationalzoo.si.edu/animals/american-robin",
+      "title": "Smithsonian’s National Zoo and Conservation Biology Institute. American robin (Turdus migratorius).",
+      "locator": "Physical Description; Native Habitat; Food/Eating Habits; Taxonomic Information; Help this Species. Supports identity, adult appearance, forest-edge and clearing habitat, mixed diet and observational context.",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": "maryland_robin",
+      "url": "https://dnr.maryland.gov/wildlife/pages/habitat/warobin.aspx",
+      "title": "Maryland Department of Natural Resources. Maryland’s Wild Acres: Creating a Wild Backyard — American Robin.",
+      "locator": "Natural History; How to Attract Robins. Supports open foraging ground near trees and shrubs, mixed diet and an explicit blueberry-food record. The generic blueberry wording supplements the species-specific FEIS record.",
+      "accessed": "2026-11-22"
+    },
+    {
+      "id": "nibr_robin_korean_name",
+      "url": "https://www.nibr.go.kr/aiibook/access/ecatalogt.jsp?Dir=988&callmode=normal&catimage=&eclang=ko&start=165&um=s",
+      "title": "National Institute of Biological Resources (Korea), Study on Korean names for major managed species and the national species list",
+      "locator": "Page 157 (catalog page 165), entry 68, Turdus migratorius. The review proposes 아메리카지빠귀 as the Korean name and documents earlier variants.",
+      "accessed": "2026-11-26"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers; original paraphrases and draft translations, pending scientific and linguistic review"
+  }
+}

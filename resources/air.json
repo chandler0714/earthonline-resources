@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "id": "air",
+  "name": {
+    "zh": "近地表空气",
+    "en": "Near-surface air",
+    "fr": "Air près de la surface",
+    "es": "Aire cercano a la superficie",
+    "ja": "地表付近の空気",
+    "ko": "지표 부근의 공기"
+  },
+  "category": "mixture",
+  "description": "地球近地表空气的参考资料。所列氮、氧和氩是干空气的工程参考质量分数。实际空气中的水汽和局部成分会随地点及天气变化。",
+  "descriptions": {
+    "en": "Reference data for air near Earth’s surface. The nitrogen, oxygen and argon values are engineering reference mass fractions for dry air. Water vapor and local composition vary with location and weather.",
+    "fr": "Données de référence sur l’air près de la surface terrestre. Les valeurs pour l’azote, l’oxygène et l’argon sont des fractions massiques de référence utilisées en ingénierie pour l’air sec. La teneur en vapeur d’eau et la composition locale varient selon le lieu et la météo.",
+    "es": "Datos de referencia del aire cercano a la superficie terrestre. Los valores de nitrógeno, oxígeno y argón son fracciones másicas de referencia para aire seco usadas en ingeniería. El vapor de agua y la composición local varían según el lugar y las condiciones meteorológicas.",
+    "ja": "地球の地表付近の空気に関する参照資料。窒素、酸素、アルゴンの値は、工学で用いられる乾燥空気の参照質量分率である。実際の水蒸気量や局地的な組成は場所や天候によって変わる。",
+    "ko": "지구 지표 부근 공기의 참고 자료다. 질소, 산소, 아르곤 수치는 공학에서 쓰는 건조 공기의 기준 질량 분율이다. 실제 수증기량과 공기의 조성은 장소와 날씨에 따라 달라진다."
+  },
+  "composition": {
+    "components": [
+      {
+        "name": "分子氮 N2",
+        "fraction_min": 0.7555,
+        "fraction_max": 0.7555
+      },
+      {
+        "name": "分子氧 O2",
+        "fraction_min": 0.2313,
+        "fraction_max": 0.2313
+      },
+      {
+        "name": "氩 Ar",
+        "fraction_min": 0.0127,
+        "fraction_max": 0.0127
+      }
+    ],
+    "source_ids": [
+      "nasa_dry_air_mass"
+    ]
+  },
+  "appearance": {
+    "phase": "gas",
+    "description": "通常不可直接从外观分辨其气体组分；样本性质取决于当地温度、压力和悬浮物。"
+  },
+  "properties": [],
+  "formation": "地球近地表空气以氮和氧为主，并含氩等气体。水汽混入空气后，局地空气的组成随湿度变化。",
+  "storage": "采样后按调查规程密封容器并记录采样条件。保存时限按待测物和方法确定。",
+  "applications": [
+    "大气组成观测样本"
+  ],
+  "acquisition": [
+    {
+      "kind": "direct_collection",
+      "operation": "collect",
+      "description": "空气质量调查可用专用采样罐采集环境空气，并记录采样条件。",
+      "conditions": [
+        "所在位置有可采样的大气",
+        "记录采样位置及环境条件"
+      ],
+      "inputs": [],
+      "equipment": [
+        "与调查方法相符的气体采样罐"
+      ],
+      "source_ids": [
+        "epa_ambient_air_sampling"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nasa_dry_air_mass",
+      "url": "https://ntrs.nasa.gov/api/citations/19770024204/downloads/19770024204.pdf",
+      "title": "NASA NTRS report 19770024204",
+      "locator": "Printed p. 19, oxidizer calculation, proportions by mass for dry air",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "noaa_atmosphere",
+      "url": "https://www.nesdis.noaa.gov/news/peeling-back-the-layers-of-the-atmosphere",
+      "title": "NOAA NESDIS, Peeling Back the Layers of the Atmosphere",
+      "locator": "Introductory atmospheric composition and troposphere sections, dry-air values stated by volume",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "epa_ambient_air_sampling",
+      "url": "https://www.epa.gov/sites/default/files/2019-12/documents/to-15a_vocs.pdf",
+      "title": "US EPA Method TO-15A",
+      "locator": "Section 2 and §7.3, whole ambient air sampling using canisters for VOC analysis",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

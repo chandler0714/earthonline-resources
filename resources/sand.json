@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "id": "sand",
+  "name": {
+    "zh": "砂",
+    "en": "Sand",
+    "fr": "Sable",
+    "es": "Arena",
+    "ja": "砂",
+    "ko": "모래"
+  },
+  "category": "mixture",
+  "description": "砂按沉积颗粒的粒径分类。Wentworth 粒级采用约 0.0625–2 毫米的标称粒径。砂粒可来自不同岩石、矿物或生物硬体碎片，组分比例依物源而变。",
+  "descriptions": {
+    "en": "Sand is a sediment grain-size class. On the Wentworth scale, the nominal grain size is about 0.0625–2 mm. Sand grains can come from various rocks, minerals, or fragments of hard parts of organisms. The proportions vary with the source material.",
+    "fr": "Le sable est une classe granulométrique des sédiments. L’échelle de Wentworth retient un diamètre nominal d’environ 0,0625 à 2 mm. Les grains peuvent provenir de diverses roches, de minéraux ou de fragments de parties dures d’organismes. Les proportions varient selon les matériaux d’origine.",
+    "es": "La arena es una clase granulométrica de los sedimentos. En la escala de Wentworth, el tamaño nominal de los granos es de aproximadamente 0,0625 a 2 mm. Los granos pueden proceder de distintas rocas, minerales o fragmentos de partes duras de organismos. Las proporciones varían según el material de origen.",
+    "ja": "砂は堆積物の粒径による分類の一つ。ウェントワースの粒度区分では公称粒径は約0.0625～2 mm。砂粒はさまざまな岩石、鉱物、生物の硬い部分の破片に由来することがあり、その割合は供給源によって変わる。",
+    "ko": "모래는 퇴적 입자의 크기에 따른 분류다. 웬트워스 입도 척도의 공칭 입자 지름은 약 0.0625~2 mm다. 모래 입자는 여러 암석이나 광물, 생물의 단단한 부분에서 나온 조각으로 이루어질 수 있으며, 구성 비율은 기원 물질에 따라 달라진다."
+  },
+  "appearance": {
+    "phase": "solid",
+    "description": "可见松散颗粒。颜色、圆度与其他外形特征随物源和搬运过程而变。"
+  },
+  "properties": [],
+  "formation": "岩石风化可提供砂级颗粒，水流、波浪和风能搬运、筛选或重新堆积这些颗粒。部分海滩还接收贝壳等钙质生物碎片。",
+  "storage": "按地点和沉积层位分别标记松散样本，可保留相邻沉积物的粒级差异。",
+  "applications": [
+    "沉积物粒级与物源观察",
+    "满足粒级和材料要求的砂可作为建筑集料"
+  ],
+  "acquisition": [
+    {
+      "kind": "direct_collection",
+      "operation": "collect",
+      "description": "在允许取样的露出砂质沉积面采集松散样本，并记录地点和沉积环境。",
+      "conditions": [
+        "有可辨识且可接近的砂质沉积",
+        "使用时另行确认粒级和材料性质"
+      ],
+      "inputs": [],
+      "equipment": [],
+      "source_ids": [
+        "usgs_littoral_sand",
+        "nps_coastal_sediments",
+        "nps_erosion"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "usgs_wentworth_sizes",
+      "url": "https://pubs.usgs.gov/of/1991/0076/report.pdf",
+      "title": "USGS Open-File Report 91-76, A Primer on Sediment-Trace Element Chemistry, 2nd Edition",
+      "locator": "Table 2.2.1-1, Sediment Particle Sizes and Class Names (printed page 17; 62.5 to 2,000 micrometers for the sand classes)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usgs_littoral_sand",
+      "url": "https://pubs.usgs.gov/of/2022/1094/ofr20221094.pdf",
+      "title": "USGS Open-File Report 2022–1094: Compilation of Sand Resource Data in Littoral Waters of San Francisco, Oceanside, and Silver Strand, California",
+      "locator": "Sediment Grain Size, Table 2 (rounded Wentworth size limits) and the sample compilation",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_coastal_sediments",
+      "url": "https://www.nps.gov/articles/coastal-sediments-parent-material.htm",
+      "title": "National Park Service, Coastal Sediments—Parent Material",
+      "locator": "Terrigenous, Volcanic, and Biogenic Parent Material",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_erosion",
+      "url": "https://www.nps.gov/subjects/erosion/erosion.htm",
+      "title": "National Park Service, Erosion",
+      "locator": "Definition and alluvial sand, gravel and silt along rivers and streams",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usgs_sand_dunes",
+      "url": "https://www.usgs.gov/geology-and-ecology-of-national-parks/geology-great-sand-dunes-national-park",
+      "title": "U.S. Geological Survey, Geology of Great Sand Dunes National Park",
+      "locator": "Dune Types and Weathering and Erosion",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usgs_natural_aggregates",
+      "url": "https://pubs.usgs.gov/publication/b1594",
+      "title": "USGS Bulletin 1594, Natural Aggregates of the Conterminous United States",
+      "locator": "Abstract (construction aggregate uses and physical suitability)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_chihuahuan_white_sands",
+      "url": "https://www.nps.gov/whsa/learn/geology-of-white-sands.htm",
+      "title": "National Park Service, Geology of White Sands",
+      "locator": "Formation of the dunefield and Present Day (gypsum sand in the Chihuahuan Desert)",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

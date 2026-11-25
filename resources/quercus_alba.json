@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "id": "quercus_alba",
+  "name": {
+    "zh": "北美白栎",
+    "en": "White oak",
+    "fr": "Chêne blanc d’Amérique",
+    "es": "Roble blanco americano (Quercus alba)",
+    "ja": "ホワイトオーク (Quercus alba)",
+    "ko": "화이트오크 (Quercus alba)"
+  },
+  "category": "biological",
+  "description": "北美白栎（Quercus alba）是北美东部原生的壳斗科落叶乔木。它生长于温带林地，叶片具圆裂片。橡子是多种野生动物的食物。",
+  "descriptions": {
+    "en": "White oak (Quercus alba) is a deciduous tree in the beech family, native to eastern North America. It grows in temperate forests and has rounded leaf lobes. Its acorns feed many kinds of wildlife.",
+    "fr": "Le chêne blanc d’Amérique (Quercus alba) est un arbre caduc de la famille des fagacées, originaire de l’est de l’Amérique du Nord. Il pousse dans les forêts tempérées et ses feuilles présentent des lobes arrondis. Ses glands nourrissent de nombreux animaux sauvages.",
+    "es": "El roble blanco americano (Quercus alba) es un árbol caducifolio de la familia de las fagáceas, originario del este de Norteamérica. Crece en bosques templados y sus hojas tienen lóbulos redondeados. Sus bellotas alimentan a numerosos animales silvestres.",
+    "ja": "ホワイトオーク（Quercus alba）は、北アメリカ東部に自生するブナ科の落葉高木。温帯林に生育し、葉の裂片は丸みを帯びる。ドングリはさまざまな野生動物の餌になる。",
+    "ko": "화이트오크(Quercus alba)는 북아메리카 동부에 자생하는 참나무과의 낙엽 교목이다. 온대림에서 자라며 잎의 갈래 끝이 둥글다. 도토리는 여러 야생동물의 먹이가 된다."
+  },
+  "appearance": {
+    "phase": "solid",
+    "description": "树冠宽展，叶片有圆钝的裂片。橡子成熟时由绿转为浅棕，可结合树叶、树冠和橡子辨认。"
+  },
+  "properties": [],
+  "formation": "树在春季开花，受粉后形成橡子，通常在秋季落地。橡子产量会随年份和个体变化。",
+  "storage": "保留原地观察的照片与季节记录，可附上可见部位和生境。",
+  "applications": [
+    "识别温带林冠树种",
+    "记录橡子与林地动物的食物关系"
+  ],
+  "acquisition": [
+    {
+      "kind": "observation",
+      "operation": "other",
+      "description": "在允许进入的林地原地观察并拍摄树冠、圆裂片的叶片，以及仍在树上或已自然落地的橡子。",
+      "conditions": [
+        "遵从地点开放规定和园区规则",
+        "沿许可路径观察并将枝叶与橡子留在原处"
+      ],
+      "inputs": [],
+      "equipment": [
+        "相机或手机"
+      ],
+      "source_ids": [
+        "usfs_white_oak",
+        "nps_field_ethics"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "usfs_white_oak",
+      "url": "https://research.fs.usda.gov/silvics/white-oak",
+      "title": "USDA Forest Service, Silvics of North America: White Oak",
+      "locator": "Taxon and opening leaf and acorn image; Distribution; Life History Traits, Reproduction, and Early Growth → Flowers, Pollination, and Fruit and Seed Production and Dissemination.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usfs_white_oak_ecology",
+      "url": "https://research.fs.usda.gov/feis/species-reviews/quealb",
+      "title": "USDA Forest Service, Fire Effects Information System: Quercus alba",
+      "locator": "Botanical Description and Successional Status. Supports deciduous habit and occurrence in eastern hardwood forest.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "ncfs_white_oak",
+      "url": "https://www.ncagr.gov/divisions/nc-forest-service/urban/north-carolina-arbor-day/arbor-day-giveaway/white-oak",
+      "title": "North Carolina Forest Service, White Oak",
+      "locator": "Tree Profile, Description, and Wildlife Benefits. Supports taxon, native hardwood and broad crown, and white-tailed deer use of white oak acorns.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "ncparks_site_survey",
+      "url": "https://auth1.dpr.ncparks.gov/ncbp_neho/species_by_site.php",
+      "title": "North Carolina State Parks, New Hope Creek Biodiversity Survey 2021–2022",
+      "locator": "Species by site table, Hollow Rock Nature Park rows for Quercus alba (Hardwood Trees), Odocoileus virginianus (Mammals), and Trametes versicolor (Fungi). Supports individual occurrence records at a common site.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_field_ethics",
+      "url": "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm",
+      "title": "National Park Service, Leave No Trace Seven Principles",
+      "locator": "Plan Ahead and Prepare; Travel and Camp on Durable Surfaces; Leave What You Find.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "ut_white_oak",
+      "url": "https://taes.tennessee.edu/recs/forestry/plants-whiteoak.htm",
+      "title": "University of Tennessee Forest Resources Center and Arboretum, White Oak",
+      "locator": "Leaf morphology, range and periodic acorn production",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

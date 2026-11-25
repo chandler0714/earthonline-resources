@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "id": "bison_bison",
+  "name": {
+    "zh": "美洲野牛",
+    "en": "American bison",
+    "fr": "Bison d’Amérique",
+    "es": "Bisonte americano",
+    "ja": "アメリカバイソン",
+    "ko": "아메리카들소"
+  },
+  "category": "biological",
+  "description": "Bison bison 是北美大型食草哺乳动物，是温带草原的消费者。堪萨斯州孔扎草原生物站记录，大须芒草是当地高草草原野牛取食的多种禾草之一。",
+  "descriptions": {
+    "en": "Bison bison is a large North American herbivorous mammal and a consumer in temperate grasslands. The Konza Prairie Biological Station in Kansas records big bluestem as one of several grasses eaten by bison in the local tallgrass prairie.",
+    "fr": "Bison bison est un grand mammifère herbivore d’Amérique du Nord et un consommateur des prairies tempérées. La station biologique de Konza Prairie, au Kansas, indique que le barbon de Gérard fait partie des graminées consommées par les bisons dans la prairie locale à herbes hautes.",
+    "es": "Bison bison es un gran mamífero herbívoro de América del Norte y un consumidor de las praderas templadas. La Estación Biológica de Konza Prairie, en Kansas, incluye el popotillo gigante entre las gramíneas que comen los bisontes en la pradera local de pastos altos.",
+    "ja": "Bison bison は北アメリカの大型草食哺乳類で、温帯草原の消費者である。カンザス州のコンザ・プレーリー生物学研究所は、ビッグブルーステムが現地の高茎草原でバイソンが食べる複数のイネ科植物の一つであることを記録している。",
+    "ko": "Bison bison은 북아메리카의 대형 초식 포유류로, 온대 초원의 소비자다. 캔자스주의 콘자 프레리 생물연구소는 빅블루스템이 현지의 키 큰 풀로 이루어진 초원에서 들소가 먹는 여러 벼과 식물 가운데 하나라고 기록했다."
+  },
+  "appearance": {
+    "phase": "solid",
+    "description": "成年个体肩部有明显隆起，头、肩和前腿的毛较长，后躯的毛较短。两性通常都有向上弯的短角。幼犊出生时毛色偏红褐，肩部隆起随成长逐渐明显。"
+  },
+  "properties": [],
+  "formation": "胎生。幼犊出生后随母兽活动，肩部隆起和深色被毛随成长逐渐明显。",
+  "storage": "保留从许可观景点获得的远距离照片和草原生境记录。",
+  "applications": [
+    "识别温带草原大型植食消费者",
+    "记录高草草原中的草与野牛食物关系"
+  ],
+  "acquisition": [
+    {
+      "kind": "observation",
+      "operation": "other",
+      "description": "在开放的许可观景位置远观野牛，记录可辨认的肩部轮廓、角、毛色和草地背景。",
+      "conditions": [
+        "遵从园区开放范围和野生动物观察距离要求",
+        "野牛接近时停止观察并退离现场"
+      ],
+      "inputs": [],
+      "equipment": [
+        "望远镜或长焦相机"
+      ],
+      "source_ids": [
+        "nps_wind_cave_bison",
+        "nps_tallgrass_safety",
+        "nps_field_ethics"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nps_wind_cave_bison",
+      "url": "https://www.nps.gov/wica/learn/nature/bison-buffalo-bison-bison.htm",
+      "title": "National Park Service, Wind Cave National Park: Bison",
+      "locator": "Bison or Buffalo? for taxon. Description for shoulder hump, horns and coat. Reproduction for reddish-brown calves and development of the hump.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "konza_prairie_bison",
+      "url": "https://keep.konza.k-state.edu/prairieecology/bison.html",
+      "title": "Kansas State University, Konza Prairie Biological Station: Bison",
+      "locator": "Tallgrass prairie research herd context and final grazing comparison paragraph, which identifies big bluestem among the grasses consumed by bison at this site.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_flint_hills_tallgrasses",
+      "url": "https://www.nps.gov/articles/000/flint-hills-tallgrasses.htm",
+      "title": "National Park Service, Flint Hills Tallgrasses",
+      "locator": "The Big Four, Upland tallgrass prairie grasses, and checklist row BLUESTEM, BIG Andropogon gerardii. Supports tallgrass grazing habitat and exact companion grass taxon.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_tallgrass_safety",
+      "url": "https://www.nps.gov/tapr/planyourvisit/safety.htm",
+      "title": "National Park Service, Tallgrass Prairie National Preserve: Safety",
+      "locator": "Bison section for local herd occurrence and posted trail and observation guidance.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_field_ethics",
+      "url": "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm",
+      "title": "National Park Service, Leave No Trace Seven Principles",
+      "locator": "Plan Ahead and Prepare; Respect Wildlife, which calls for observing at a distance.",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

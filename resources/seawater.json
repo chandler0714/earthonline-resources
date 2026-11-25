@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "id": "seawater",
+  "name": {
+    "zh": "海水",
+    "en": "Seawater",
+    "fr": "Eau de mer",
+    "es": "Agua de mar",
+    "ja": "海水",
+    "ko": "해수"
+  },
+  "category": "mixture",
+  "description": "海水含有溶解盐。按 NOAA 的平均盐度估算，每千克海水约含 35 克溶解盐。实际盐度随海域、降水和蒸发变化，悬浮物及微量成分随样本而异。",
+  "descriptions": {
+    "en": "Seawater contains dissolved salts. NOAA’s average salinity corresponds to about 35 grams of dissolved salts per kilogram of seawater. Actual salinity varies with location, precipitation and evaporation. Suspended matter and trace constituents vary by sample.",
+    "fr": "L’eau de mer contient des sels dissous. La salinité moyenne indiquée par la NOAA correspond à environ 35 grammes de sels dissous par kilogramme d’eau de mer. La salinité varie selon le lieu, les précipitations et l’évaporation. Les matières en suspension et les constituants à l’état de traces varient d’un échantillon à l’autre.",
+    "es": "El agua de mar contiene sales disueltas. La salinidad media indicada por la NOAA equivale a unos 35 gramos de sales disueltas por kilogramo de agua de mar. La salinidad varía según el lugar, las precipitaciones y la evaporación. Las partículas en suspensión y los componentes traza varían entre muestras.",
+    "ja": "海水には溶けた塩類が含まれる。NOAA が示す平均塩分では、海水 1 キログラムに約 35 グラムの塩類が溶けている。実際の塩分は海域や降水、蒸発によって変わり、懸濁物質や微量成分の量は試料によって異なる。",
+    "ko": "해수에는 용존 염류가 들어 있다. NOAA가 제시한 평균 염분은 해수 1킬로그램당 용존 염류 약 35그램에 해당한다. 실제 염분은 해역, 강수, 증발에 따라 달라지며 부유 물질과 미량 성분은 시료마다 다르다."
+  },
+  "composition": {
+    "components": [
+      {
+        "name": "水及未单列的非盐组分",
+        "fraction_min": 0.965,
+        "fraction_max": 0.965
+      },
+      {
+        "name": "溶解盐总量",
+        "fraction_min": 0.035,
+        "fraction_max": 0.035
+      }
+    ],
+    "source_ids": [
+      "noaa_salinity"
+    ]
+  },
+  "appearance": {
+    "phase": "liquid",
+    "description": "液态水体；透明度、颜色及悬浮物随海域条件改变。"
+  },
+  "properties": [],
+  "formation": "陆地岩石风化产生的离子经河流进入海洋，海底热液与海底火山等也可贡献溶解物。",
+  "storage": "取样后用清洁容器密闭保存，并记录海域与采样条件。",
+  "applications": [
+    "海洋盐度与成分观测样本"
+  ],
+  "acquisition": [
+    {
+      "kind": "direct_collection",
+      "operation": "collect",
+      "description": "从可接近的海洋水体中采集海水样本。",
+      "conditions": [
+        "存在可接近的液态海水",
+        "记录采样地点"
+      ],
+      "inputs": [],
+      "equipment": [
+        "取样容器"
+      ],
+      "source_ids": [
+        "noaa_salinity"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "noaa_salinity",
+      "url": "https://oceanservice.noaa.gov/facts/whysalty.html",
+      "title": "NOAA National Ocean Service: Why is the ocean salty?",
+      "locator": "Paragraphs on salt sources and average salinity",
+      "accessed": "2026-11-08"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

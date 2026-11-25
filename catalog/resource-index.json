@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "description": "Canonical resource IDs are indexed once. domains describe material roles; ecosystem tags are optional and may contain multiple values.",
+  "description": "Canonical resource IDs are indexed once. Domains describe material roles. Ecosystem and ecological-role tags support browsing known examples.",
   "domains": [
     {
       "id": "atmosphere",
@@ -47,12 +47,184 @@
   ],
   "resources": [
     {
+      "id": "air",
+      "path": "resources/air.json",
+      "domains": [
+        "atmosphere"
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "andropogon_gerardii",
+      "path": "resources/andropogon_gerardii.json",
+      "domains": [
+        "biosphere"
+      ],
+      "ecosystems": [
+        "grassland"
+      ],
+      "ecological_roles": [
+        "producer"
+      ]
+    },
+    {
+      "id": "apostichopus_californicus",
+      "path": "resources/apostichopus_californicus.json",
+      "domains": [
+        "biosphere"
+      ],
+      "ecosystems": [
+        "temperate_kelp_forest",
+        "coastal_intertidal"
+      ],
+      "ecological_roles": [
+        "consumer",
+        "detritivore"
+      ]
+    },
+    {
+      "id": "basalt",
+      "path": "resources/basalt.json",
+      "domains": [
+        "geosphere"
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "bison_bison",
+      "path": "resources/bison_bison.json",
+      "domains": [
+        "biosphere"
+      ],
+      "ecosystems": [
+        "grassland"
+      ],
+      "ecological_roles": [
+        "consumer"
+      ]
+    },
+    {
+      "id": "gypsum",
+      "path": "resources/gypsum.json",
+      "domains": [
+        "geosphere"
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "halite",
+      "path": "resources/halite.json",
+      "domains": [
+        "geosphere"
+      ],
+      "ecosystems": [
+        "desert"
+      ]
+    },
+    {
+      "id": "hematite",
+      "path": "resources/hematite.json",
+      "domains": [
+        "geosphere"
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "kaolinitic_clay",
+      "path": "resources/kaolinitic_clay.json",
+      "domains": [
+        "geosphere",
+        "pedosphere"
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "lepus_americanus",
+      "path": "resources/lepus_americanus.json",
+      "domains": [
+        "biosphere"
+      ],
+      "ecosystems": [
+        "boreal_forest"
+      ],
+      "ecological_roles": [
+        "consumer"
+      ]
+    },
+    {
+      "id": "macrocystis_pyrifera",
+      "path": "resources/macrocystis_pyrifera.json",
+      "domains": [
+        "biosphere"
+      ],
+      "ecosystems": [
+        "temperate_kelp_forest"
+      ],
+      "ecological_roles": [
+        "producer"
+      ]
+    },
+    {
+      "id": "odocoileus_virginianus",
+      "path": "resources/odocoileus_virginianus.json",
+      "domains": [
+        "biosphere"
+      ],
+      "ecosystems": [
+        "temperate_forest"
+      ],
+      "ecological_roles": [
+        "consumer"
+      ]
+    },
+    {
+      "id": "ondatra_zibethicus",
+      "path": "resources/ondatra_zibethicus.json",
+      "domains": [
+        "biosphere"
+      ],
+      "ecosystems": [
+        "wetland",
+        "lake_pond",
+        "river_stream"
+      ],
+      "ecological_roles": [
+        "consumer"
+      ]
+    },
+    {
+      "id": "picea_glauca",
+      "path": "resources/picea_glauca.json",
+      "domains": [
+        "biosphere"
+      ],
+      "ecosystems": [
+        "boreal_forest"
+      ],
+      "ecological_roles": [
+        "producer"
+      ]
+    },
+    {
       "id": "quartz",
       "path": "resources/quartz.json",
       "domains": [
         "geosphere"
       ],
       "ecosystems": []
+    },
+    {
+      "id": "quercus_alba",
+      "path": "resources/quercus_alba.json",
+      "domains": [
+        "biosphere"
+      ],
+      "ecosystems": [
+        "temperate_forest"
+      ],
+      "ecological_roles": [
+        "producer"
+      ]
     },
     {
       "id": "raw_water",
@@ -63,11 +235,112 @@
       "ecosystems": [
         "river_stream",
         "lake_pond",
-        "wetland",
+        "wetland"
+      ]
+    },
+    {
+      "id": "sand",
+      "path": "resources/sand.json",
+      "domains": [
+        "pedosphere"
+      ],
+      "ecosystems": [
+        "desert",
+        "river_stream",
+        "coastal_intertidal"
+      ]
+    },
+    {
+      "id": "seawater",
+      "path": "resources/seawater.json",
+      "domains": [
+        "hydrosphere"
+      ],
+      "ecosystems": [
         "coastal_intertidal",
+        "temperate_kelp_forest",
         "coral_reef",
         "open_ocean",
         "deep_sea"
+      ]
+    },
+    {
+      "id": "strongylocentrotus_purpuratus",
+      "path": "resources/strongylocentrotus_purpuratus.json",
+      "domains": [
+        "biosphere"
+      ],
+      "ecosystems": [
+        "temperate_kelp_forest",
+        "coastal_intertidal"
+      ],
+      "ecological_roles": [
+        "consumer"
+      ]
+    },
+    {
+      "id": "topsoil",
+      "path": "resources/topsoil.json",
+      "domains": [
+        "pedosphere"
+      ],
+      "ecosystems": [
+        "grassland",
+        "savanna"
+      ]
+    },
+    {
+      "id": "trametes_versicolor",
+      "path": "resources/trametes_versicolor.json",
+      "domains": [
+        "biosphere"
+      ],
+      "ecosystems": [
+        "temperate_forest"
+      ],
+      "ecological_roles": [
+        "decomposer"
+      ]
+    },
+    {
+      "id": "turdus_migratorius",
+      "path": "resources/turdus_migratorius.json",
+      "domains": [
+        "biosphere"
+      ],
+      "ecosystems": [
+        "temperate_forest"
+      ],
+      "ecological_roles": [
+        "consumer"
+      ]
+    },
+    {
+      "id": "typha_latifolia",
+      "path": "resources/typha_latifolia.json",
+      "domains": [
+        "biosphere"
+      ],
+      "ecosystems": [
+        "wetland",
+        "lake_pond",
+        "river_stream"
+      ],
+      "ecological_roles": [
+        "producer"
+      ]
+    },
+    {
+      "id": "vaccinium_angustifolium",
+      "path": "resources/vaccinium_angustifolium.json",
+      "domains": [
+        "biosphere"
+      ],
+      "ecosystems": [
+        "temperate_forest"
+      ],
+      "ecological_roles": [
+        "producer"
       ]
     },
     {
@@ -76,7 +349,9 @@
       "domains": [
         "hydrosphere"
       ],
-      "ecosystems": []
+      "ecosystems": [
+        "snow_ice"
+      ]
     }
   ]
 }

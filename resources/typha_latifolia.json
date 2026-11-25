@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "id": "typha_latifolia",
+  "name": {
+    "zh": "宽叶香蒲",
+    "en": "Broadleaf cattail",
+    "fr": "Massette à larges feuilles (Typha latifolia)",
+    "es": "Espadaña de hoja ancha (Typha latifolia)",
+    "ja": "ガマ（Typha latifolia）",
+    "ko": "큰부들 (Typha latifolia)"
+  },
+  "category": "biological",
+  "description": "Typha latifolia 是挺水多年生植物，常见于淡水至微咸水的沼泽、池塘、湖泊和缓流河段。它是湿地植物生产者，根与根茎可被麝鼠取食。",
+  "descriptions": {
+    "en": "Typha latifolia is an emergent perennial plant commonly found in fresh to slightly brackish marshes, ponds, lakes and slow-moving river reaches. It is a wetland plant producer, and muskrats may feed on its roots and rhizomes.",
+    "fr": "Typha latifolia est une plante vivace émergente, fréquente dans les marais, étangs, lacs et tronçons de rivière à faible courant, en eau douce à légèrement saumâtre. C'est un producteur végétal des zones humides, dont les racines et les rhizomes peuvent être consommés par les rats musqués.",
+    "es": "Typha latifolia es una planta perenne emergente, común en pantanos, estanques, lagos y tramos de río de corriente lenta, en aguas dulces a ligeramente salobres. Es una planta productora de los humedales, y las ratas almizcleras pueden alimentarse de sus raíces y rizomas.",
+    "ja": "Typha latifolia は抽水性の多年生植物で、淡水域から塩分の低い汽水域にかけての沼地や池、湖、流れの緩やかな河川区間によく見られる。湿地の植物生産者であり、根と根茎はマスクラットに食べられることがある。",
+    "ko": "Typha latifolia는 여러해살이 정수식물로, 담수부터 염분이 낮은 기수까지의 늪, 연못, 호수 및 흐름이 느린 하천 구간에서 흔히 볼 수 있다. 습지의 식물 생산자이며, 사향쥐가 뿌리와 뿌리줄기를 먹을 수 있다."
+  },
+  "appearance": {
+    "phase": "solid",
+    "description": "茎粗壮、圆柱形且不分枝，叶片线形而扁平，花密集形成顶生穗状花序。香蒲属存在杂交与形态变异，这些可见特征应结合当地分类检索资料核对。"
+  },
+  "properties": [],
+  "formation": "种子可随风与水传播，根茎的营养生长也参与种群更新和群落扩展。",
+  "storage": "保存原地观察的照片、日期与生境记录，植株和基质保留在原处。",
+  "applications": [
+    "观察挺水湿地植被",
+    "记录宽叶香蒲与麝鼠的取食关系"
+  ],
+  "acquisition": [
+    {
+      "kind": "observation",
+      "operation": "other",
+      "description": "从允许进入的路径或观测点记录叶片、茎和花序，作为物种辨认的线索。观察只形成记录，植株留在原地。",
+      "conditions": [
+        "遵从观测地点的开放规定和当地规则",
+        "保持原有植被与基质，辨认时考虑相似种及杂交个体"
+      ],
+      "inputs": [],
+      "equipment": [
+        "相机或手机"
+      ],
+      "source_ids": [
+        "usfs_typha_review",
+        "nps_field_ethics"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "usfs_typha_review",
+      "url": "https://research.fs.usda.gov/feis/species-reviews/typlat",
+      "title": "USDA Forest Service, Fire Effects Information System: Typha latifolia, broadleaf cattail",
+      "locator": "Taxonomy; Site Characteristics; Botanical Description, Aboveground Description and Variation/Hybrids; Seed Dispersal; Vegetative Regeneration; Secondary Succession, Grazing/Trampling. Supports identity, habitat, visible traits, renewal and muskrat feeding.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_field_ethics",
+      "url": "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm",
+      "title": "National Park Service, Leave No Trace Seven Principles",
+      "locator": "Plan Ahead and Prepare; Travel and Camp on Durable Surfaces; Leave What You Find. Supports checking site rules, using established paths and leaving plants in place.",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

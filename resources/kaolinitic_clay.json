@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "id": "kaolinitic_clay",
+  "name": {
+    "zh": "高岭质黏土",
+    "en": "Kaolinitic clay",
+    "fr": "Argile kaolinitique",
+    "es": "Arcilla caolinítica",
+    "ja": "カオリナイト質粘土",
+    "ko": "카올리나이트질 점토"
+  },
+  "category": "mixture",
+  "description": "高岭质黏土含有较多高岭石族矿物，也可含石英、云母或其他矿物。可塑性和烧成性质受具体矿物组合及杂质影响，耐热用途需要检验具体样品。",
+  "descriptions": {
+    "en": "Kaolinitic clay is rich in kaolin-group minerals and can also contain quartz, mica, or other minerals. Plasticity and firing behavior vary with the mineral assemblage and impurities. A sample must be tested to establish suitability for heat-resistant uses.",
+    "fr": "L’argile kaolinitique est riche en minéraux du groupe du kaolin et peut aussi contenir du quartz, du mica ou d’autres minéraux. Sa plasticité et son comportement à la cuisson varient selon les minéraux et les impuretés. Les usages à haute température exigent des essais sur l’échantillon.",
+    "es": "La arcilla caolinítica es rica en minerales del grupo del caolín y también puede contener cuarzo, mica u otros minerales. Su plasticidad y comportamiento durante la cocción dependen de la composición y las impurezas. Para usos a alta temperatura se debe ensayar la muestra.",
+    "ja": "カオリナイト質粘土はカオリン族鉱物に富み、石英や雲母などを含むこともある。可塑性や焼成時の性質は鉱物の組み合わせや不純物によって異なる。耐熱用途への適性は試料ごとに調べる必要がある。",
+    "ko": "카올리나이트질 점토는 카올린족 광물이 풍부하며 석영, 운모 등 다른 광물도 포함할 수 있다. 가소성과 소성 특성은 광물 조합과 불순물에 따라 달라진다. 내열 용도에 적합한지는 시료를 시험해야 알 수 있다."
+  },
+  "appearance": {
+    "phase": "solid",
+    "description": "通常呈土状，部分样品颜色较浅，颜色随杂质及伴生矿物变化。"
+  },
+  "properties": [],
+  "formation": "部分沉积型高岭质黏土形成于淡水盆地。含长石岩石经风化后，细粒物质经水搬运至缓流或静水环境沉积，可形成透镜状或层状黏土体。",
+  "storage": "样品注明采样位置与层位，分别保留以比较矿物成分与烧成性质。",
+  "applications": [
+    "矿床与沉积环境研究",
+    "经试验确认性质的样品可用作陶瓷或耐火材料原料"
+  ],
+  "acquisition": [
+    {
+      "kind": "digging",
+      "operation": "mine",
+      "description": "在已识别且允许作业的矿层采集黏土样品，记录其层位和伴生岩石。",
+      "conditions": [
+        "地质调查确认有对应黏土层",
+        "存在可到达并符合当地安全要求的取样地点"
+      ],
+      "inputs": [],
+      "equipment": [],
+      "source_ids": ["bcgs_e07", "usgs_clay"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "bcgs_e07",
+      "url": "https://cmscontent.nrs.gov.bc.ca/geoscience/publicationcatalogue/OpenFile/BCGS_OF1999-10_compiled.pdf",
+      "title": "British Columbia Geological Survey, E07 — Sedimentary Kaolin",
+      "locator": "Geological characteristics and Gangue mineralogy",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "usgs_clay",
+      "url": "https://www.usgs.gov/centers/national-minerals-information-center/clays-statistics-and-information",
+      "title": "U.S. Geological Survey, Clays Statistics and Information",
+      "locator": "Overview, distinguishing clay properties and industrial uses",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "usgs_clay_yearbook",
+      "url": "https://pubs.usgs.gov/myb/vol1/2019/myb1-2019-clay-shale.pdf",
+      "title": "U.S. Geological Survey, Clay and Shale, 2019 Minerals Yearbook",
+      "locator": "Overview, kaolin composition and associated minerals",
+      "accessed": "2026-11-24"
+    }
+  ],
+  "review": {"status": "unreviewed"},
+  "provenance": {"license": "CC0-1.0", "contributor": "EarthOnline maintainers"}
+}

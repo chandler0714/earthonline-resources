@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "id": "picea_glauca",
+  "name": {
+    "zh": "白云杉",
+    "en": "White spruce",
+    "fr": "Épinette blanche",
+    "es": "Pícea blanca",
+    "ja": "カナダトウヒ",
+    "ko": "글라우카가문비나무"
+  },
+  "category": "biological",
+  "description": "Picea glauca 是北美北部原生的松科常绿乔木，是北方针叶林的生产者，在阿拉斯加和加拿大部分林地可形成优势树冠。有记录显示，雪鞋兔会取食白云杉幼苗和幼树的芽及新梢。",
+  "descriptions": {
+    "en": "Picea glauca is an evergreen tree in the pine family, native to northern North America. It is a producer in boreal conifer forests and can dominate the canopy of some stands in Alaska and Canada. Snowshoe hares have been recorded eating the buds and new shoots of seedlings and young trees.",
+    "fr": "Picea glauca est un arbre à feuillage persistant de la famille des Pinacées, originaire du nord de l’Amérique du Nord. C’est un producteur des forêts boréales de conifères, où il peut dominer la canopée de certains peuplements en Alaska et au Canada. Le lièvre d’Amérique se nourrit notamment des bourgeons et des jeunes pousses des semis et des jeunes arbres.",
+    "es": "Picea glauca es un árbol perennifolio de la familia de las pináceas, originario del norte de América del Norte. Es un productor de los bosques boreales de coníferas y puede dominar el dosel de algunos rodales de Alaska y Canadá. Se ha observado que la liebre americana come las yemas y los brotes nuevos de las plántulas y los árboles jóvenes.",
+    "ja": "Picea glauca は、北アメリカ北部に自生するマツ科の常緑高木である。北方針葉樹林の生産者で、アラスカやカナダの一部の林分では林冠を占める主要樹種となる。カンジキウサギが実生や若木の芽と新梢を食べた記録がある。",
+    "ko": "Picea glauca는 북아메리카 북부에 자생하는 소나무과의 상록 교목이다. 북방 침엽수림의 생산자로, 알래스카와 캐나다의 일부 숲에서는 숲의 상층을 이루는 우점종이 될 수 있다. 눈덧신토끼가 묘목과 어린나무의 싹과 새 가지를 먹는 것으로 기록되었다."
+  },
+  "appearance": {
+    "phase": "solid",
+    "description": "树冠常呈圆锥形。针叶多呈蓝绿，短而尖，单生于小枝，横截面有棱。成熟球果椭圆、呈浅棕色，悬垂于枝上。"
+  },
+  "properties": [],
+  "formation": "在球果中形成具翅种子，种子主要借风传播。",
+  "storage": "保留树形、可见小枝与球果的原地观察照片。可补充所在林分的生境描述。",
+  "applications": [
+    "识别北方针叶林生产者",
+    "记录白云杉与雪鞋兔的林地食物关系"
+  ],
+  "acquisition": [
+    {
+      "kind": "observation",
+      "operation": "other",
+      "description": "在允许进入的林地记录整株、小枝上的可见针叶与悬垂球果，可从地面观察树冠。",
+      "conditions": [
+        "遵从地点开放规定和园区规则",
+        "沿许可路径观察，将小枝与球果留在原处"
+      ],
+      "inputs": [],
+      "equipment": [
+        "相机或望远镜"
+      ],
+      "source_ids": [
+        "nrcs_white_spruce",
+        "nps_field_ethics"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nrcs_white_spruce",
+      "url": "https://plants.usda.gov/DocumentLibrary/plantguide/pdf/pg_pigl.pdf",
+      "title": "USDA NRCS, White Spruce Plant Guide",
+      "locator": "Page 1, Description and Distribution for Picea glauca identity, crown, needles, cones, and northern North American native range. Page 2, Establishment → Adaptation for dominant interior forest stands.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usfs_white_spruce_silvics",
+      "url": "https://research.fs.usda.gov/silvics/white-spruce",
+      "title": "USDA Forest Service, Silvics of North America: White Spruce",
+      "locator": "Life History Traits, Reproduction, and Early Growth, Seed Production and Dissemination for reproduction and wind-dispersed seeds.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usfs_white_spruce_ecology",
+      "url": "https://research.fs.usda.gov/feis/species-reviews/picgla",
+      "title": "USDA Forest Service, Fire Effects Information System: Picea glauca",
+      "locator": "Plant Communities (Western Canada and Eastern Canada) for boreal forests. Importance to Wildlife and Livestock, Palatability and Nutritional Value for variable snowshoe hare consumption, including Kluane twig trials and browsing on buds and new growth.",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nps_field_ethics",
+      "url": "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm",
+      "title": "National Park Service, Leave No Trace Seven Principles",
+      "locator": "Plan Ahead and Prepare; Travel and Camp on Durable Surfaces; Leave What You Find.",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

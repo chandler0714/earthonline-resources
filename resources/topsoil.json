@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "id": "topsoil",
+  "name": {
+    "zh": "矿质表土",
+    "en": "Mineral topsoil",
+    "fr": "Couche superficielle minérale du sol",
+    "es": "Capa mineral superficial del suelo",
+    "ja": "鉱質表土",
+    "ko": "광물질 표토"
+  },
+  "category": "mixture",
+  "description": "本条目指在地表或其有机层下形成的 A 矿质土层。腐殖化有机质可与矿质颗粒混合。颗粒组成、有机质、含水状况和层厚随地点变化。",
+  "descriptions": {
+    "en": "This entry describes the mineral A soil horizon that forms at the surface or below a surface organic layer. Humified organic matter may mix with mineral particles. Particle composition, organic matter, moisture conditions, and horizon thickness vary by location.",
+    "fr": "Cette fiche décrit l’horizon minéral A du sol, qui se forme en surface ou sous une couche organique superficielle. De la matière organique humifiée peut se mélanger aux particules minérales. La composition des particules, la matière organique, l’humidité et l’épaisseur de l’horizon varient selon le lieu.",
+    "es": "Esta ficha describe el horizonte mineral A del suelo, que se forma en la superficie o bajo una capa orgánica superficial. La materia orgánica humificada puede mezclarse con partículas minerales. La composición de las partículas, la materia orgánica, la humedad y el espesor del horizonte varían según el lugar.",
+    "ja": "地表、または地表の有機物層の下に形成される鉱質土壌のA層を指す。腐植化した有機物は鉱物粒子と混ざることがある。粒子の組成、有機物、水分状態、層の厚さは場所によって変わる。",
+    "ko": "지표 또는 표면 유기물층 아래에 형성되는 광물질 토양의 A층을 가리킨다. 부식화된 유기물이 광물 입자와 섞일 수 있다. 입자 조성, 유기물, 수분 상태, 층 두께는 위치에 따라 달라진다."
+  },
+  "appearance": {
+    "phase": "solid",
+    "description": "颗粒、土团和根系可并见。含腐殖质的 A 层通常比下层深，但颜色和结构随土壤而变。"
+  },
+  "properties": [],
+  "formation": "风化的基岩或搬运沉积物可充当母质。气候、生物、地形和时间共同影响土层发育，部分草原和稀树草原可形成富含腐殖质的表层。",
+  "storage": "按采样层位分别标记并存放样本，保留原有地点和层位记录。",
+  "applications": [
+    "陆生植物的根系生长介质",
+    "土壤剖面观察与分层取样"
+  ],
+  "acquisition": [
+    {
+      "kind": "digging",
+      "operation": "dig",
+      "description": "在有采样权限的剖面取得已辨识 A 层的土样。",
+      "conditions": [
+        "当地已形成且可辨识 A 层",
+        "样本应保留层位信息"
+      ],
+      "inputs": [],
+      "equipment": [],
+      "source_ids": [
+        "nrcs_soil_survey_manual",
+        "nrcs_sampling_field_book"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nrcs_soil_survey_manual",
+      "url": "https://www.nrcs.usda.gov/sites/default/files/2022-09/The-Soil-Survey-Manual.pdf",
+      "title": "USDA NRCS Soil Survey Manual (2017)",
+      "locator": "Chapter 3, A Horizons (printed page 95)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nrcs_surface_down",
+      "url": "https://www.nrcs.usda.gov/sites/default/files/2022-11/from-the-surface-down.pdf",
+      "title": "USDA NRCS From the Surface Down",
+      "locator": "Section 1, What are soil horizons (A horizon; formation and profile examples)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nrcs_soil_facts",
+      "url": "https://www.nrcs.usda.gov/resources/education-and-teaching-materials/soil-facts",
+      "title": "USDA NRCS Soil Facts",
+      "locator": "Definitions of soil (soil-forming factors and support of rooted plants)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nrcs_soil_taxonomy_guide",
+      "url": "https://www.nrcs.usda.gov/sites/default/files/2022-06/Illustrated_Guide_to_Soil_Taxonomy.pdf",
+      "title": "USDA NRCS Illustrated Guide to Soil Taxonomy",
+      "locator": "Part 3, Mollic Epipedon, Concept and Background Information (printed page 3-13)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "nrcs_sampling_field_book",
+      "url": "https://www.nrcs.usda.gov/sites/default/files/2022-09/field-book.pdf",
+      "title": "USDA NRCS Field Book for Describing and Sampling Soils, Version 4.0",
+      "locator": "Chapter 8, Types of Sampling and Sampling Techniques (printed pages 8-1 to 8-2)",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers"
+  }
+}

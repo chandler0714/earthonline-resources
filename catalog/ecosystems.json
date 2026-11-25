@@ -21,6 +21,11 @@
       "id": "noaa_marine",
       "url": "https://sanctuaries.noaa.gov/visit/ecosystems/",
       "title": "NOAA National Marine Sanctuaries Ecosystems"
+    },
+    {
+      "id": "noaa_kelp_mapping",
+      "url": "https://sanctuaries.noaa.gov/science/conservation/mapping-and-monitoring-kelp-forests.html",
+      "title": "NOAA Remote Sensing Tools for Mapping and Monitoring Kelp Forests along the West Coast"
     }
   ],
   "ecosystems": [
@@ -165,6 +170,17 @@
       },
       "source_ids": [
         "noaa_marine"
+      ]
+    },
+    {
+      "id": "temperate_kelp_forest",
+      "realm": "marine",
+      "name": {
+        "en": "Temperate kelp forest",
+        "zh": "温带海藻林"
+      },
+      "source_ids": [
+        "noaa_kelp_mapping"
       ]
     },
     {

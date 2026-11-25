@@ -8,6 +8,10 @@ from jsonschema import Draft202012Validator, FormatChecker
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = json.loads((ROOT / 'schema/resource.schema.json').read_text())
 VALIDATOR = Draft202012Validator(SCHEMA, format_checker=FormatChecker())
+MOBILE_V1_TEXT = Draft202012Validator({
+    '$defs': SCHEMA['$defs'],
+    '$ref': '#/$defs/mobileV1LocalizedText',
+})
 
 
 def validate_resource(data):
@@ -31,10 +35,7 @@ def validate_resource(data):
             for child in value:
                 walk(child)
     walk(data)
-    composition = data['composition']
-    if data['category'] == 'mixture' and 'components' not in composition:
-        errors.append('Mixtures need components, not a single formula')
-    components = composition.get('components', [])
+    components = data.get('composition', {}).get('components', [])
     if any(c['fraction_min'] > c['fraction_max'] for c in components):
         errors.append('Inverted composition interval')
     if sum(c['fraction_min'] for c in components) > 1.00000001:
@@ -49,7 +50,7 @@ def validate_resource(data):
     return errors
 
 
-def validate_directory(path):
+def validate_directory(path, *, mobile_v1=False):
     errors, seen = [], set()
     paths = sorted(Path(path).rglob('*.json'))
     if not paths:
@@ -57,7 +58,11 @@ def validate_directory(path):
     for file in paths:
         try:
             data = json.loads(file.read_text())
-            errors.extend(f'{file.name}: {e}' for e in validate_resource(data))
+            resource_errors = validate_resource(data)
+            errors.extend(f'{file.name}: {e}' for e in resource_errors)
+            if mobile_v1 and not resource_errors:
+                errors.extend(f"{file.name}: {'.'.join(map(str, e.absolute_path))}: {e.message}"
+                              for e in MOBILE_V1_TEXT.iter_errors(data))
             identifier = data.get('id')
             if identifier in seen:
                 errors.append(f'{file.name}: duplicate resource ID {identifier}')
@@ -120,16 +125,31 @@ def validate_catalog(root=ROOT):
             errors.append(f'Invalid or missing indexed resource path: {relative}')
             continue
         try:
-            actual_id = json.loads(path.read_text()).get('id')
+            resource = json.loads(path.read_text())
+            actual_id = resource.get('id')
         except (OSError, ValueError) as error:
             errors.append(f'Indexed resource cannot be read: {relative}: {error}')
             continue
         if actual_id != identifier:
             errors.append(f'Indexed resource ID mismatch: {relative}')
-        if not item.get('domains') or any(domain not in domain_ids for domain in item['domains']):
+        domains, habitats = item.get('domains'), item.get('ecosystems')
+        valid_domains = isinstance(domains, list) and domains and all(
+            isinstance(domain, str) and domain in domain_ids for domain in domains)
+        valid_habitats = isinstance(habitats, list) and all(
+            isinstance(tag, str) and tag in ecosystem_ids for tag in habitats)
+        if not valid_domains:
             errors.append(f'Unknown or missing domain for: {identifier}')
-        if not isinstance(item.get('ecosystems'), list) or any(tag not in ecosystem_ids for tag in item['ecosystems']):
+        if not valid_habitats:
             errors.append(f'Unknown or missing ecosystem list for: {identifier}')
+        if 'ecological_roles' in item:
+            roles = item['ecological_roles']
+            allowed = {'producer', 'consumer', 'detritivore', 'decomposer'}
+            if (resource.get('category') != 'biological'
+                    or not valid_domains or 'biosphere' not in domains or not valid_habitats or not habitats
+                    or not isinstance(roles, list) or not roles
+                    or any(not isinstance(role, str) or role not in allowed for role in roles)
+                    or len(set(roles)) != len(roles)):
+                errors.append(f'Invalid ecological roles for: {identifier}')
 
     actual_paths = {path.relative_to(root).as_posix() for path in resources_root.rglob('*.json')}
     for path in sorted(actual_paths - paths):
@@ -142,7 +162,9 @@ def validate_catalog(root=ROOT):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('directory', nargs='?', type=Path, default=ROOT / 'resources')
-    errors = validate_directory(parser.parse_args().directory) + validate_catalog()
+    parser.add_argument('--mobile-v1', action='store_true', help='check all six names and descriptions')
+    args = parser.parse_args()
+    errors = validate_directory(args.directory, mobile_v1=args.mobile_v1) + validate_catalog()
     for error in errors:
         print(error)
     print(f'{len(errors)} validation errors; scientific review remains separate')

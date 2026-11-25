@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "id": "vaccinium_angustifolium",
+  "name": {
+    "zh": "矮丛蓝莓（Vaccinium angustifolium）",
+    "en": "Lowbush blueberry (Vaccinium angustifolium)",
+    "fr": "Bleuet à feuilles étroites (Vaccinium angustifolium)",
+    "es": "Arándano bajo (Vaccinium angustifolium)",
+    "ja": "ローブッシュブルーベリー（Vaccinium angustifolium）",
+    "ko": "로우부시 블루베리(Vaccinium angustifolium)"
+  },
+  "category": "biological",
+  "description": "矮丛蓝莓（Vaccinium angustifolium）是北美东部原生的低矮灌木，见于部分林地和开阔地。其成熟浆果有鲜食记录。",
+  "descriptions": {
+    "en": "Lowbush blueberry (Vaccinium angustifolium) is a low-growing shrub native to eastern North America. It occurs in some woodlands and open habitats. Its ripe berries have been eaten fresh.",
+    "fr": "Le bleuet à feuilles étroites (Vaccinium angustifolium) est un arbuste de petite taille, originaire de l’est de l’Amérique du Nord. Il pousse dans certains bois et milieux ouverts. La consommation de ses baies mûres à l’état frais est documentée.",
+    "es": "El arándano bajo (Vaccinium angustifolium) es un arbusto de porte bajo originario del este de Norteamérica. Crece en algunos bosques y hábitats abiertos. Se ha documentado el consumo de sus bayas maduras frescas.",
+    "ja": "ローブッシュブルーベリー（Vaccinium angustifolium）は、北アメリカ東部に自生する低木。一部の林地や開けた場所に生育する。熟した果実を生で食べてきた記録がある。",
+    "ko": "로우부시 블루베리(Vaccinium angustifolium)는 북아메리카 동부에 자생하는 키 작은 관목이다. 일부 숲과 탁 트인 곳에서 자란다. 익은 열매를 생으로 먹어 온 기록이 있다."
+  },
+  "appearance": {
+    "phase": "solid",
+    "description": "成熟果实呈深蓝色，有时带浅色果粉；此特征本身不足以鉴定物种。"
+  },
+  "properties": [],
+  "formation": "见于部分混交林、开阔地等酸性生境，常见于排水良好的酸性土壤。开花和果实成熟的时间受当地气候影响。",
+  "storage": "记录地点、观察日期及成熟状态；本条目未提供经核验的储存条件或保质期。",
+  "applications": [
+    "作为该物种成熟浆果鲜食的文献记录，不推及其他物种、未成熟果实或其他部位。"
+  ],
+  "acquisition": [
+    {
+      "kind": "observation",
+      "operation": "other",
+      "description": "在允许观察的地点记录已经鉴定的植株及果实成熟状态。",
+      "conditions": [
+        "物种身份已经核验。",
+        "遵守所在地的进入与观察规定。"
+      ],
+      "inputs": [],
+      "equipment": [],
+      "source_ids": [
+        "usfs_lowbush_blueberry",
+        "umaine_ripe_fruit"
+      ]
+    },
+    {
+      "kind": "gathering",
+      "operation": "collect",
+      "description": "文献记录了本物种果实的采集；这里仅指已经核验身份的成熟果实。",
+      "conditions": [
+        "已经可靠鉴定为 Vaccinium angustifolium，且有已确认成熟的果实。",
+        "采集须获得所在地要求的许可；引用文献不授予采集权限。"
+      ],
+      "inputs": [],
+      "equipment": [],
+      "source_ids": [
+        "usfs_lowbush_blueberry",
+        "umaine_ripe_fruit",
+        "floyd_lowbush_phenology"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "usfs_lowbush_blueberry",
+      "url": "https://research.fs.usda.gov/feis/species-reviews/vacang",
+      "title": "Tirmenstein, D. A. 1991. Vaccinium angustifolium, lowbush blueberry. USDA Forest Service, Fire Effects Information System. DOI: 10.2737/feis-species-review-vacang",
+      "locator": "Taxonomy; General Distribution; Site Characteristics; Plant Communities; Seasonal Development; Other Uses: Traditional uses, Modern uses, Recreation use",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "umaine_ripe_fruit",
+      "url": "https://extension.umaine.edu/signs-of-the-seasons/indicator-species/lowbush-blueberry-phenophase-definitions/",
+      "title": "University of Maine Cooperative Extension. Lowbush Blueberry Phenophase Definitions. Signs of the Seasons.",
+      "locator": "Fruit: Fruits; Ripe fruits. Explicit definitions for Vaccinium angustifolium; not a food-safety or harvesting-permission source.",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "floyd_lowbush_phenology",
+      "url": "https://doi.org/10.1002/ajb2.70240",
+      "title": "Floyd et al., Reproductive stages in lowbush blueberry occur earlier with increasing temperature",
+      "locator": "Introduction, habitats and documented uses. Abstract and Results, reproductive timing and geographic coverage",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "cfia_lowbush_name",
+      "url": "https://inspection.canada.ca/fr/protection-vegetaux/especes-envahissantes/directives/gestion-risques-phytosanitaire/dgr-19-04",
+      "title": "Canadian Food Inspection Agency, DGR-19-04",
+      "locator": "French common name paired with Vaccinium angustifolium in the list of host plants",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "contributor": "EarthOnline maintainers; original paraphrases and draft translations, pending scientific and linguistic review"
+  }
+}

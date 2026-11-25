@@ -3,10 +3,21 @@
   "id": "water",
   "name": {
     "zh": "水",
-    "en": "Water"
+    "en": "Water",
+    "fr": "Eau",
+    "es": "Agua",
+    "ja": "水",
+    "ko": "물"
   },
   "category": "substance",
-  "description": "常见液体",
+  "description": "化学物质 H₂O。本条记录同一物质的液相、固相和气相。天然水体与水汽所在的空气可含其他成分。",
+  "descriptions": {
+    "en": "The chemical substance H₂O. This entry covers the liquid, solid and gaseous phases of the same substance. Natural bodies of water and the air containing water vapor may contain other components.",
+    "fr": "La substance chimique H₂O. Cette fiche décrit les phases liquide, solide et gazeuse de cette même substance. Les eaux naturelles et l'air contenant de la vapeur d'eau peuvent contenir d'autres constituants.",
+    "es": "La sustancia química H₂O. Esta ficha abarca las fases líquida, sólida y gaseosa de la misma sustancia. Las masas de agua naturales y el aire que contiene vapor de agua pueden contener otros componentes.",
+    "ja": "化学物質 H₂O。同じ物質の液相、固相、気相をこの項目で扱う。自然の水域や、水蒸気を含む空気には、ほかの成分が含まれることがある。",
+    "ko": "화학 물질 H₂O. 이 항목은 같은 물질의 액체, 고체, 기체 상태를 다룬다. 강이나 호수 같은 자연 수역과 수증기가 섞인 공기에는 다른 성분이 들어 있을 수 있다."
+  },
   "composition": {
     "formula": "H2O",
     "source_ids": [
@@ -15,34 +26,19 @@
   },
   "appearance": {
     "phase": "liquid",
-    "description": "无色透明，条件约 20°C、常压"
+    "description": "液态水通常是透明的。冰与雪中含有固态水，水汽是气态水。天然样本可能含有其他成分。"
   },
   "properties": [],
-  "formation": "液态水可由冷凝等过程形成",
-  "storage": "使用合适的密闭容器，避免污染",
+  "formation": "水穿过空气、地表和地下各水库。蒸发将液态水转成水汽，凝结以及降水改变其所在位置，积雪与冰可经融化补给地表水。",
+  "storage": "自然水库包括空气、积雪和冰体、地表水与含水层，储存相态随环境变化。",
   "applications": [
     "溶剂"
   ],
   "acquisition": [
     {
-      "kind": "direct_collection",
-      "operation": "collect",
-      "description": "从液态水体收集",
-      "conditions": [
-        "存在液态水"
-      ],
-      "inputs": [],
-      "equipment": [
-        "容器"
-      ],
-      "source_ids": [
-        "nist"
-      ]
-    },
-    {
       "kind": "processing",
       "operation": "distill",
-      "description": "蒸馏含水混合物并收集冷凝液，纯度取决于设备与杂质。",
+      "description": "蒸馏将含水混合物中的一部分水转为蒸汽并收集冷凝液。某些挥发性杂质仍可能随之进入冷凝液，纯度需按样本验证。",
       "conditions": [
         "需要受控加热及冷凝"
       ],
@@ -58,7 +54,8 @@
         "接收容器"
       ],
       "source_ids": [
-        "distillation"
+        "distillation",
+        "cdc_distillation"
       ]
     }
   ],
@@ -71,11 +68,32 @@
       "accessed": "2026-10-27"
     },
     {
+      "id": "usgs_cycle",
+      "url": "https://www.usgs.gov/water-science-school/text-description-usgs-water-cycle-diagram",
+      "title": "USGS Text Description of the Water Cycle Diagram",
+      "locator": "Pools store water and Fluxes move water between pools",
+      "accessed": "2026-11-20"
+    },
+    {
       "id": "distillation",
-      "url": "https://www.usgs.gov/special-topics/water-science-school/science/desalination",
+      "url": "https://www.usgs.gov/water-science-school/science/desalination",
       "title": "USGS Desalination",
-      "locator": "Distillation",
-      "accessed": "2026-10-27"
+      "locator": "Distillation and other desalination methods",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "cdc_distillation",
+      "url": "https://www.cdc.gov/drinking-water/about/about-home-water-treatment-systems.html",
+      "title": "CDC About Home Water Treatment Systems",
+      "locator": "Distillation systems",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "usgs_water_properties",
+      "url": "https://www.usgs.gov/special-topics/water-science-school/properties-water",
+      "title": "USGS Water Science School, Properties of water",
+      "locator": "Overview of water properties and Chemical properties, Water, the Universal Solvent",
+      "accessed": "2026-11-25"
     }
   ],
   "review": {
