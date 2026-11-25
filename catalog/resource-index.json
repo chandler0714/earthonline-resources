@@ -130,6 +130,15 @@
       "ecosystems": []
     },
     {
+      "id": "kaolinitic_clay",
+      "path": "resources/kaolinitic_clay.json",
+      "domains": [
+        "geosphere",
+        "pedosphere"
+      ],
+      "ecosystems": []
+    },
+    {
       "id": "lepus_americanus",
       "path": "resources/lepus_americanus.json",
       "domains": [
@@ -291,6 +300,19 @@
       ],
       "ecological_roles": [
         "decomposer"
+      ]
+    },
+    {
+      "id": "turdus_migratorius",
+      "path": "resources/turdus_migratorius.json",
+      "domains": [
+        "biosphere"
+      ],
+      "ecosystems": [
+        "temperate_forest"
+      ],
+      "ecological_roles": [
+        "consumer"
       ]
     },
     {
